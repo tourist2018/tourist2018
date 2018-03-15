@@ -19,5 +19,11 @@ public class HomeController {
         model.addAttribute("address", "VietNam");
         return "review";
     }
+    
+    @RequestMapping("/login")
+    public String getLogin(Model model) {
+        model.addAttribute("address", "VietNam");
+        return "login";
+    }
 	
 }

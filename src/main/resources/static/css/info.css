@@ -1,0 +1,48 @@
+.img_info {
+    height: 500px;
+    width: 950px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.thumb {
+  width: 70px;
+  height: 70px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#textarea{
+  
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: red solid 3px;
+  }
+#rating {
+  text-align: center;
+  perspective: 250px;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+#rating span {
+  cursor: pointer;
+  font-size: 50px;
+  padding: 0 10px;
+  color: red;
+  opacity: .5;
+  transition: all 150ms;
+  display: inline-block;
+  transform: rotateX(45deg);
+  transform-origin: center bottom;
+}
+
+#rating span.hover {
+  color: #ff0;
+  opacity: 1;
+  transform: rotateX(0deg);
+  text-shadow: 0 0 30px #ffc;
+}

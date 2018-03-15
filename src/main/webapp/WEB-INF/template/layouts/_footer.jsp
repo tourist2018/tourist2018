@@ -1,6 +1,15 @@
-<div
-   style="background: #E0E0E0; text-align: center; padding: 5px; margin-top: 10px;">
-     
-   @Copyright QuyITEngineer
-     
+<!-- START FOOTER -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div class="copyright">
+                    <p>Copyright &copy; 2017 |  All Rights Reserved.</p>
+                </div><!--- END FOOTER COPYRIGHT -->
+            </div><!--- END COL -->
+        </div><!--- END ROW -->
+    </div><!--- END CONTAINER -->
 </div>
+<!-- END FOOTER -->
+
+
