@@ -1,40 +1,51 @@
 <!DOCTYPE tiles-definitions PUBLIC  
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
-       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
-        
-<tiles-definitions>  
- 
-    <!-- Base Define -->
-    <definition name="base.definition" 
-        template="/WEB-INF/template/layouts/template.jsp">  
-        <!-- <put-attribute name="title" value="" />  --> 
-        <put-attribute name="header" value="/WEB-INF/template/layouts/_header.jsp" />  
-        <!-- <put-attribute name="menu" value="/WEB-INF/template/layouts/_menu.jsp" />  --> 
-        <put-attribute name="body" value="" />  
-        <put-attribute name="footer" value="/WEB-INF/template/layouts/_footer.jsp" />  
-    </definition>  
-        
-    <!-- Home Page -->
-    <definition name="homePage" extends="base.definition">  
-        <!-- <put-attribute name="title" value="Home Page" />   -->
-        <put-attribute name="body" value="/WEB-INF/views/homePage.jsp" />  
-    </definition>
-    
-    <definition name="abc" extends="base.definition">  
-        <!-- <put-attribute name="title" value="Home Page" />   -->
-        <put-attribute name="body" value="/WEB-INF/resource/css/review.css" />  
-    </definition>
-    
-    <!-- Review Page  -->
-    <definition name="review" extends="base.definition">  
-        <put-attribute name="body" value="/WEB-INF/views/review.jsp" />  
-    </definition>  
 
-    <definition name="login" extends="base.definition">  
-        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
-    </definition>
+<tiles-definitions>
 
- 
-  
+	<!-- Base Define -->
+	<definition name="base.definition" template="/WEB-INF/template/layouts/template.jsp">
+		<!-- <put-attribute name="title" value="" /> -->
+		<put-attribute name="header"
+			value="/WEB-INF/template/layouts/_header.jsp" />
+		<!-- <put-attribute name="menu" value="/WEB-INF/template/layouts/_menu.jsp" 
+			/> -->
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/template/layouts/_footer.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="homePage" extends="base.definition">
+		<!-- <put-attribute name="title" value="Home Page" /> -->
+		<put-attribute name="body" value="/WEB-INF/views/homePage.jsp" />
+	</definition>
+
+	<definition name="abc" extends="base.definition">
+		<!-- <put-attribute name="title" value="Home Page" /> -->
+		<put-attribute name="body" value="/WEB-INF/resource/css/review.css" />
+	</definition>
+
+	<!-- Review Page -->
+	<definition name="review" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/review.jsp" />
+	</definition>
+
+	<definition name="login" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+
+	<!-- Tour Booking -->
+	<definition name="tourbooking" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/tourbooking.jsp" />
+	</definition>
+
+	<!-- List Tour -->
+	<definition name="listtour" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/listtour.jsp" />
+	</definition>
+
+
 </tiles-definitions> 
