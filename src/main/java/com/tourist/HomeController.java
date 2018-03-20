@@ -38,6 +38,6 @@ public class HomeController {
         model.addAttribute("address", "VietNam");
         return "listtour";
     }
-    
+    //test
 	
 }
