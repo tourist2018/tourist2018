@@ -26,5 +26,18 @@ public class HomeController {
         model.addAttribute("address", "VietNam");
         return "login";
     }
+    
+    @RequestMapping("/tourbooking")
+    public String getTourBooking(Model model) {
+        model.addAttribute("address", "VietNam");
+        return "tourbooking";
+    }
+    
+    @RequestMapping("/listtour")
+    public String getListTour(Model model) {
+        model.addAttribute("address", "VietNam");
+        return "listtour";
+    }
+  
 	
 }
