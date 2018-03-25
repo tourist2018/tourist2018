@@ -1,4 +1,4 @@
-package com.tourist;
+package com.tourist.controller;
 
 import java.util.Map;
 
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-	@RequestMapping(value= {"/*", "/home"})
+	@RequestMapping(value= {"/", "/home"})
     public ModelAndView home(Model model) {
         return new ModelAndView("homePage");
     }
@@ -25,6 +25,10 @@ public class HomeController {
     public String getLogin(Model model) {
         model.addAttribute("address", "VietNam");
         return "login";
+    }
+    @RequestMapping("/test")
+    public String getTest(Model model) {
+        return "test";
     }
 	
 }
