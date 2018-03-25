@@ -26,9 +26,5 @@ public class HomeController {
         model.addAttribute("address", "VietNam");
         return "login";
     }
-    @RequestMapping("/test")
-    public String getTest(Model model) {
-        return "test";
-    }
-	
+
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE tiles-definitions PUBLIC  
-       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
 
         
@@ -21,7 +21,6 @@
         <put-attribute name="body" value="/WEB-INF/views/homePage.jsp" />  
     </definition>
 
-    
     <!-- Review Page  -->
     <definition name="review" extends="base.definition">  
         <put-attribute name="body" value="/WEB-INF/views/review.jsp" />  
@@ -34,6 +33,14 @@
         <put-attribute name="body" value="/WEB-INF/views/infoUser.jsp" />  
     </definition>
 
- 
-  
+	<!-- Tour Booking -->
+	<definition name="tourbooking" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/tourbooking.jsp" />
+	</definition>
+
+	<!-- List Tour -->
+	<definition name="listtour" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/listtour.jsp" />
+	</definition>
+
 </tiles-definitions> 
