@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 isELIgnored="false" pageEncoding="UTF-8"%>
 <!-- START TITLE TOP -->
 <section class="section-content section-padding"
 	style="background-image: url(img/bg/section-bg.jpg); background-size: cover; background-position: center center;">
@@ -41,37 +43,30 @@
 			<div class="col-md-4 col-sm-4 col-xs-12">
 				<div class="book_now">
 					<h4>Tour Booking</h4>
-					<form id="contact-form" method="post" enctype="multipart/form-data">
 						<div class="row">
 							<div class="form-group col-md-12">
-								<input type="text" name="name" class="form-control"
-									id="first-name" placeholder="Name" required="required">
+								<h4>Tên tour:</h4>
 							</div>
 							<div class="form-group col-md-12">
-								<input type="email" name="email" class="form-control" id="email"
-									placeholder="Email" required="required">
+								<h5>Du lịch bán đảo sơn trà.</h5>
 							</div>
 							<div class="form-group col-md-12">
-								<input type="text" name="phone" class="form-control" id="phone"
-									placeholder="Phone" required="required">
+								<p>3 ngày 2 đêm</p>
 							</div>
 							<div class="form-group col-md-12">
-								<input type="text" name="date" class="form-control" id="date"
-									placeholder="Date" required="required">
+								<p>Ngày khởi hành: <strong>02/07/2018</strong></p>
 							</div>
 							<div class="form-group col-md-12">
-								<input type="text" name="person" class="form-control"
-									id="person" placeholder="No of Person" required="required">
+								<p>Giá tiền: <strong>$124</strong></p>
 							</div>
 							<div class="col-md-12">
 								<div class="actions">
-									<input type="submit" value="Send message" name="submit"
+									<input type="button" value="BOOKING NOW!" name="submit"
 										id="submitButton" class="btn btn-lg btn-contact-bg"
 										title="Submit Your Message!" />
 								</div>
 							</div>
 						</div>
-					</form>
 				</div>
 				<div class="tag">
 					<h4 class="blog_sidebar_title">Tag cloud</h4>

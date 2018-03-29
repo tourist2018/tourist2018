@@ -24,10 +24,6 @@
                 <label class="string optional" for="user-pw">Password *</label>
                 <input class="string optional" maxlength="255" id="user-pw" name="passwordRegister" placeholder="PasswordRegister" type="password" size="50" />
               </div>
-              <div class="input string optional">
-                <label class="string optional" for="user-pw-repeat">Repeat password *</label>
-                <input class="string optional" maxlength="255" id="user-pw-repeat" name="passwordRegisterRepeat" placeholder="Repeat password" type="password" size="50" />
-              </div>
             </div>
             <div class="simform__actions">
               <button class="sumbit" name="register" type="sumbit" >Create Account</button>
