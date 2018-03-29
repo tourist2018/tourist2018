@@ -1,17 +1,18 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <!-- Meta -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <!-- SITE TITLE -->
-<title>FZ - Tour & Travel Agency Template</title>
+<title>Du lịch Đà Nẵng</title>
 <!-- Latest Bootstrap min CSS -->
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
@@ -107,11 +108,13 @@
 	<script src="js/scripts.js"></script>
 	<!-- script by Thanh -->
 	<script src="js/index.js"></script>
-	
+
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-	<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
-	
+	<script
+		src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script
+		src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+
 	<script src="js/list_tour.js"></script>
 
 </body>
