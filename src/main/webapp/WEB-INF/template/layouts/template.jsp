@@ -36,11 +36,7 @@
 <!-- component CSS -->
 <link rel="stylesheet" href="css/aos.css">
 
-<!-- Style CSS -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/quy.css">
-<link rel="stylesheet" href="css/review.css">
+
 <!-- start link by Thanh -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
 <link rel="stylesheet" href="css/login.css">
@@ -52,6 +48,12 @@
 	rel="stylesheet" />
 <!-- end link by thanh -->
 <link rel="stylesheet" href="css/info.css">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/quy.css">
+	<link rel="stylesheet" href="css/review.css">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
