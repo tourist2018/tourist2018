@@ -9,7 +9,7 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 				<div class="hero-text">
-					<h1>Welcome to Da Nang City.</h1>
+					<h1>DU LỊCH TP ĐÀ NẴNG</h1>
 					<p>Top tourist, nơi chia sẽ cảm xúc và khám phá những địa điểm du lịch hấp dẫn. <br />Hãy để những trải nghiệm được lưu giữ nơi đây.</p>
 					<a href="#special_package" class="btn btn-default btn-home-bg">Find place</a>
 				</div>
@@ -18,7 +18,205 @@
 	</div><!--- END CONTAINER -->
 </section>
 		<!-- END  HOME DESIGN -->
-		
+
+<!-- START SPECIAL PACKAGE -->
+<section id="special_package" class="special_package section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title text-center">
+					<h2>Tour đặt biệt</h2>
+					<span></span>
+					<!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p> -->
+				</div>
+			</div><!-- END COL -->
+		</div><!-- END ROW -->
+		<div class="row text-center">
+			<div class="col-md-12" data-aos="fade-up">
+				<div id="package-slider" class="owl-carousel">
+					<div class="single_package">
+						<img class="img-fluid" src="img/package/1.jpg" alt="">
+						<h5 class="package-name">Bà Nà Hill</h5>
+						<div class="package-hover">
+							<h5>Bà Nà Hill</h5>
+							<span>Giá chỉ $236</span>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<span class="time_zone">2 days 1 night</span>
+						</div>
+					</div><!-- END SINGLE PACKAGE -->
+					<div class="single_package">
+						<img class="img-fluid" src="img/package/2.jpg" alt="">
+						<h5 class="package-name">The Sun Whell</h5>
+						<div class="package-hover">
+							<h5>The Sun Whell</h5>
+							<span>Giá chỉ $236</span>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<span class="time_zone">3 days 2 night</span>
+						</div>
+					</div><!-- END SINGLE PACKAGE -->
+					<div class="single_package">
+						<img class="img-fluid" src="img/package/3.jpg" alt="">
+						<h5 class="package-name">La Vang Holy Land</h5>
+						<div class="package-hover">
+							<h5>La Vang Holy Land</h5>
+							<span>Starting from $236</span>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<span class="time_zone">5 days 4 night</span>
+						</div>
+					</div><!-- END SINGLE PACKAGE -->
+					<div class="single_package">
+						<img class="img-fluid" src="img/package/4.jpg" alt="">
+						<h5 class="package-name">Asia Park</h5>
+						<div class="package-hover">
+							<h5>Asia Park</h5>
+							<span>Starting from $236</span>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<span class="time_zone">5 days 4 night</span>
+						</div>
+					</div><!-- END SINGLE PACKAGE -->
+					<div class="single_package">
+						<img class="img-fluid" src="img/package/5.jpg" alt="">
+						<h5 class="package-name">Linh Ung temple</h5>
+						<div class="package-hover">
+							<h5>japan</h5>
+							<span>Starting from $236</span>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<span class="time_zone">5 days 4 night</span>
+						</div>
+					</div><!-- END SINGLE PACKAGE -->
+					<div class="single_package">
+						<img class="img-fluid" src="img/package/6.jpg" alt="">
+						<h5 class="package-name">Hoi An city</h5>
+						<div class="package-hover">
+							<h5>Hoi An city</h5>
+							<span>Starting from $236</span>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<span class="time_zone">5 days 4 night</span>
+						</div>
+					</div><!-- END SINGLE PACKAGE -->
+				</div>
+			</div><!-- END COL -->
+		</div><!-- END ROW -->
+	</div><!-- END CONTAINER -->
+</section>
+<!-- END SPECIAL PACKAGE -->
+
+
+<!-- START TOP DEALS -->
+<section id="top_deals" class="top_deals section-padding">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" data-aos="fade-up">
+				<div class="section-title text-center">
+					<h2>các tour đứng đầu</h2>
+					<span></span>
+					<p>Được mọi người bình chọn là những nơi đẹp nhất Đà Nẵng nói riêng, nước Việt Nam nói chung.</p>
+				</div>
+			</div><!-- END COL -->
+		</div><!-- END ROW -->
+		<div class="row" data-aos="fade-up">
+			<div class="col-sm-4 col-xs-12 no-padding">
+				<div class="grid">
+					<figure class="effect-sadie">
+						<img src="img/portfolio/1.jpg" alt=""/>
+						<figcaption>
+							<h4>Beautifull Place</h4>
+							<p><a href="info.php">place detail</a></p>
+						</figcaption>
+					</figure>
+				</div><!--- END GRID -->
+			</div><!--- END COL -->
+			<div class="col-sm-4 col-xs-12 no-padding">
+				<div class="grid">
+					<figure class="effect-sadie">
+						<img src="img/portfolio/2.jpg" alt=""/>
+						<figcaption>
+							<h4>Beautifull Place</h4>
+							<p><a href="info.php">place detail</a></p>
+						</figcaption>
+					</figure>
+				</div><!--- END GRID -->
+			</div><!--- END COL -->
+			<div class="col-sm-4 col-xs-12 no-padding">
+				<div class="grid">
+					<figure class="effect-sadie">
+						<img src="img/portfolio/3.jpg" alt=""/>
+						<figcaption>
+							<h4>Beautifull Place</h4>
+							<p><a href="info.php">place detail</a></p>
+						</figcaption>
+					</figure>
+				</div><!--- END GRID -->
+			</div><!--- END COL -->
+			<div class="col-sm-4 col-xs-12 no-padding">
+				<div class="grid">
+					<figure class="effect-sadie">
+						<img src="img/portfolio/4.jpg" alt=""/>
+						<figcaption>
+							<h4>Beautifull Place</h4>
+							<p><a href="info.php">place detail</a></p>
+						</figcaption>
+					</figure>
+				</div><!--- END GRID -->
+			</div><!--- END COL -->
+			<div class="col-sm-4 col-xs-12 no-padding">
+				<div class="grid">
+					<figure class="effect-sadie">
+						<img src="img/portfolio/5.jpg" alt=""/>
+						<figcaption>
+							<h4>Beautifull Place</h4>
+							<p><a href="info.php">place detail</a></p>
+						</figcaption>
+					</figure>
+				</div><!--- END GRID -->
+			</div><!--- END COL -->
+			<div class="col-sm-4 col-xs-12 no-padding">
+				<div class="grid">
+					<figure class="effect-sadie">
+						<img src="img/portfolio/6.jpg" alt=""/>
+						<figcaption>
+							<h4>Beautifull Place</h4>
+							<p><a href="info.php">place detail</a></p>
+						</figcaption>
+					</figure>
+				</div><!--- END GRID -->
+			</div><!--- END COL -->
+		</div><!--- END ROW -->
+	</div><!--- END CONTAINER-FLUID -->
+</section>
+<!-- END TOP DEALS -->
+
+
 <!-- START SERVICES -->
 <section id="service" class="our_services">
 	<div class="container">
@@ -149,264 +347,6 @@
 	</div><!-- END CONTAINER -->
 </section>
 <!-- END COUNTER -->
-
-<!-- START SPECIAL PACKAGE -->
-<section id="special_package" class="special_package section-padding">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-title text-center">
-					<h2>special package</h2>
-					<span></span>
-					<!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p> -->
-				</div>
-			</div><!-- END COL -->
-		</div><!-- END ROW -->
-		<div class="row text-center">
-			<div class="col-md-12" data-aos="fade-up">
-				<div id="package-slider" class="owl-carousel">
-					<div class="single_package">
-						<img class="img-fluid" src="img/package/1.jpg" alt="">
-						<h5 class="package-name">Ba Na Hill</h5>
-						<div class="package-hover">
-							<h5>Ba Na Hill</h5>
-							<span>Starting from $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-					<div class="single_package">
-						<img class="img-fluid" src="img/package/2.jpg" alt="">
-						<h5 class="package-name">The Sun Whell</h5>
-						<div class="package-hover">
-							<h5>The Sun Whell</h5>
-							<span>Starting from $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-					<div class="single_package">
-						<img class="img-fluid" src="img/package/3.jpg" alt="">
-						<h5 class="package-name">La Vang Holy Land</h5>
-						<div class="package-hover">
-							<h5>La Vang Holy Land</h5>
-							<span>Starting from $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-					<div class="single_package">
-						<img class="img-fluid" src="img/package/4.jpg" alt="">
-						<h5 class="package-name">Asia Park</h5>
-						<div class="package-hover">
-							<h5>Asia Park</h5>
-							<span>Starting from $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-					<div class="single_package">
-						<img class="img-fluid" src="img/package/5.jpg" alt="">
-						<h5 class="package-name">Linh Ung temple</h5>
-						<div class="package-hover">
-							<h5>japan</h5>
-							<span>Starting from $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-					<div class="single_package">
-						<img class="img-fluid" src="img/package/6.jpg" alt="">
-						<h5 class="package-name">Hoi An city</h5>
-						<div class="package-hover">
-							<h5>Hoi An city</h5>
-							<span>Starting from $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-				</div>
-			</div><!-- END COL -->
-		</div><!-- END ROW -->
-	</div><!-- END CONTAINER -->
-</section>
-<!-- END SPECIAL PACKAGE -->
-
-<!-- START TOP DEALS -->
-<section id="top_deals" class="top_deals section-padding">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12" data-aos="fade-up">
-				<div class="section-title text-center">
-					<h2>Top Place</h2>
-					<span></span>
-					<p>Được mọi người bình chọn là những nơi đẹp nhất Đà Nẵng nói riêng, nước Việt Nam nói chung.</p>
-				</div>
-			</div><!-- END COL -->
-		</div><!-- END ROW -->
-		<div class="row" data-aos="fade-up">
-			<div class="col-sm-4 col-xs-12 no-padding">
-				<div class="grid">
-					<figure class="effect-sadie">
-						<img src="img/portfolio/1.jpg" alt=""/>
-						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
-						</figcaption>
-					</figure>
-				</div><!--- END GRID -->
-			</div><!--- END COL -->
-			<div class="col-sm-4 col-xs-12 no-padding">
-				<div class="grid">
-					<figure class="effect-sadie">
-						<img src="img/portfolio/2.jpg" alt=""/>
-						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
-						</figcaption>
-					</figure>
-				</div><!--- END GRID -->
-			</div><!--- END COL -->
-			<div class="col-sm-4 col-xs-12 no-padding">
-				<div class="grid">
-					<figure class="effect-sadie">
-						<img src="img/portfolio/3.jpg" alt=""/>
-						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
-						</figcaption>
-					</figure>
-				</div><!--- END GRID -->
-			</div><!--- END COL -->
-			<div class="col-sm-4 col-xs-12 no-padding">
-				<div class="grid">
-					<figure class="effect-sadie">
-						<img src="img/portfolio/4.jpg" alt=""/>
-						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
-						</figcaption>
-					</figure>
-				</div><!--- END GRID -->
-			</div><!--- END COL -->
-			<div class="col-sm-4 col-xs-12 no-padding">
-				<div class="grid">
-					<figure class="effect-sadie">
-						<img src="img/portfolio/5.jpg" alt=""/>
-						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
-						</figcaption>
-					</figure>
-				</div><!--- END GRID -->
-			</div><!--- END COL -->
-			<div class="col-sm-4 col-xs-12 no-padding">
-				<div class="grid">
-					<figure class="effect-sadie">
-						<img src="img/portfolio/6.jpg" alt=""/>
-						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
-						</figcaption>
-					</figure>
-				</div><!--- END GRID -->
-			</div><!--- END COL -->
-		</div><!--- END ROW -->
-	</div><!--- END CONTAINER-FLUID -->
-</section>
-<!-- END TOP DEALS -->
-
-
-
-<!-- START BLOG -->
-<section id="blog" class="blog_section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12" data-aos="fade-up">
-				<div class="section-title text-center wow zoomIn">
-					<h2>Tour Review</h2>
-					<span></span>
-					<p>Share about you. we are one.</p>
-				</div>
-			</div><!-- END COL -->
-		</div><!-- END ROW -->
-		<div class="row">
-			<div class="col-lg-6" data-aos="fade-up">
-				<div class="single_blog">
-					<div class="blog-text wow fadeInLeft">
-
-						<h4><a href="#">Blog of Me</a></h4>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-						<p><strong> 25 August, 2017</strong></p>
-					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/blog/blog1.jpg"/>
-				</div>
-			</div><!--- END COL -->
-			<div class="col-lg-6" data-aos="fade-up">
-				<div class="single_blog">
-					<div class="blog-text wow fadeInLeft">
-						<h4><a href="#">Blog title here</a></h4>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-						<p><strong> 26 August, 2017</strong></p>
-					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/blog/blog2.jpg"/>
-				</div>
-			</div><!--- END COL -->
-			<div class="col-lg-6" data-aos="fade-up">
-				<div class="single_blog">
-					<div class="blog-text wow fadeInRight">
-						<h4><a href="#">Blog title here</a></h4>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-						<p><strong> 27 August, 2017</strong></p>
-					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/blog/blog3.jpg"/>
-				</div>
-			</div><!--- END COL -->
-			<div class="col-lg-6" data-aos="fade-up">
-				<div class="single_blog">
-					<div class="blog-text wow fadeInRight">
-						<h4><a href="#">Blog title here</a></h4>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-						<p><strong> 28 August, 2017</strong></p>
-					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/blog/blog4.jpg"/>
-				</div>
-			</div><!--- END COL -->
-		</div><!--- END ROW -->
-	</div><!--- END CONTAINER -->
-</section>
-<!-- END BLOG -->
-
 
 
 <!-- START COMPANY PARTNER LOGO  -->

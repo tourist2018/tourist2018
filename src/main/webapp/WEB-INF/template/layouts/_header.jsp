@@ -17,13 +17,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
-                <li class="nav-item"><a class="nav-link" href="#special_package">package</a></li>
-                <li class="nav-item"><a class="nav-link" href="#top_deals">Top deals</a></li>
-                <li class="nav-item"><a class="nav-link" href="#deals_discount">offer</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#service">tour special</a></li>
+                <li class="nav-item"><a class="nav-link" href="#special_package">top tour</a></li>
+                <li class="nav-item"><a class="nav-link" href="#top_deals">service</a></li>
+                <li class="nav-item"><a class="nav-link" href="#deals_discount">about</a></li>
             </ul>
         </div>
     </div>
