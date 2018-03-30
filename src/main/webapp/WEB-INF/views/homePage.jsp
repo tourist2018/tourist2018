@@ -9,7 +9,7 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 				<div class="hero-text">
-					<h1>Welcome to Da Nang City.</h1>
+					<h1>DU LỊCH TP ĐÀ NẴNG</h1>
 					<p>Top tourist, nơi chia sẽ cảm xúc và khám phá những địa điểm du lịch hấp dẫn. <br />Hãy để những trải nghiệm được lưu giữ nơi đây.</p>
 					<a href="#special_package" class="btn btn-default btn-home-bg">Find place</a>
 				</div>
@@ -18,137 +18,6 @@
 	</div><!--- END CONTAINER -->
 </section>
 		<!-- END  HOME DESIGN -->
-		
-<!-- START SERVICES -->
-<section id="service" class="our_services">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<div class="section-title">
-					<h2>TOP services</h2>
-					<span></span>
-				</div>
-			</div>
-		</div>
-		<div class="row text-center">
-			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
-				<div class="service">
-					<div class="icon"><i class="fa fa-bed"></i></div>
-					<h4>Hotel Booking</h4>
-					<p>In the evening, freely visit the Asian Park: a leading amusement park in Southeast Asia of world-class standard, you are free to experience "the Sun Wheel". Stay overnight in Da Nang.</p>
-				</div>
-			</div><!-- END COL -->
-			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
-				<div class="service">
-					<div class="icon"><i class="fa fa-plane"></i></div>
-					<h4>Flight Booking</h4>
-					<p>You are present at the Tan Son Nhat Airport, Column 10 - Vietravel's counter, Domestic Terminal. Vietravel's tour guide shall support you in procedures to catch a flight to Da Nang.</p>
-				</div>
-			</div><!-- END COL -->
-			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
-				<div class="service">
-					<div class="icon"><i class="fa fa-ticket"></i></div>
-					<h4>Ticket Booking</h4>
-					<p>You take a coach to visit the Ba Na - Suoi Mo, enjoy the chilly air of the "Da Lat in the Central", then visit Linh Ung Pagoda, Debay Cellars, Le Jardin D'Amour Garden, etc.</p>
-				</div>
-			</div><!-- END COL -->
-			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
-				<div class="service">
-					<div class="icon"><i class="fa fa-ship"></i></div>
-					<h4>View Booking</h4>
-					<p>Continue to visit the new cave in the World Heritage Site of Phong Nha - Ke Bang: Paradise Cave - Viewed as an underground palace, thanks to beautiful.</p>
-				</div>
-			</div><!-- END COL -->
-			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
-				<div class="service">
-					<div class="icon"><i class="fa fa-train"></i></div>
-					<h4>Rail Booking</h4>
-					<p>you will admire the panoramic view of the city, mountain and Son Tra island in  a perfect way. Next, take a coach to the Da Nang airport for a flight to Ho Chi Minh City.</p>
-				</div>
-			</div><!-- END COL -->
-			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
-				<div class="service">
-					<div class="icon"><i class="fa fa-home"></i></div>
-					<h4>Amazing Place</h4>
-					<p>the coach will take you to visit Hoi An Old Town: Bridge Pagoda, Phung Hung Ancient House, Phuoc Kien Assembly Hall, Crafts establishments.</p>
-				</div>
-			</div><!-- END COL -->
-		</div><!-- END ROW -->
-	</div><!-- END CONTAINER -->
-</section>
-<!-- END SERVICES -->
-
-<!-- START WHY CHOOSE US -->
-<section data-stellar-background-ratio="0.3" class="why_choose section-padding"  style="background-image: url(img/bg/sunwhell.jpg);  background-size:cover; background-position: center center;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12" data-aos="fade-up">
-				<div class="section-title text-center">
-					<h2 class="section-title-white">why choose us</h2>
-					<span class="section-title-white"></span>
-					<p class="section-title-white">TOP Tour & Travel, được hàng triệu người trên thế giới tin tưởng.</p>
-				</div>
-			</div><!-- END COL -->
-		</div><!-- END ROW -->
-		<div class="row text-center">
-			<div class="col-sm-4 col-xs-12" data-aos="fade-up">
-				<div class="single-choose">
-					<i class="fa fa-star"></i>
-					<h4>Handpicked Hotels</h4>
-
-				</div>
-			</div><!-- END COL -->
-			<div class="col-sm-4 col-xs-12" data-aos="fade-up">
-				<div class="single-choose">
-					<i class="fa fa-globe"></i>
-					<h4>World Class Service</h4>
-
-				</div>
-			</div><!-- END COL -->
-			<div class="col-sm-4 col-xs-12" data-aos="fade-up">
-				<div class="single-choose">
-					<i class="fa fa-thumbs-up"></i>
-					<h4>Best Price Guarantee</h4>
-
-				</div>
-			</div><!-- END COL -->
-		</div><!-- END ROW -->
-	</div><!-- END CONTAINER -->
-</section>
-<!-- END WHY CHOOSE US -->
-
-<!-- START COUNTER -->
-<section class="complete-project-area counter_feature section-padding">
-	<div class="container">
-		<div class="row ">
-			<div class="col-md-3 col-sm-6 col-xs-12 no-padding" data-aos="fade-up">
-				<div class="single-project-complete">
-					<h2 class="counter-num">32652</h2>
-					<h3>Happy Customers</h3>
-				</div>
-			</div><!-- END COL -->
-			<div class="col-md-3 col-sm-6 col-xs-12 no-padding" data-aos="fade-up">
-				<div class="single-project-complete">
-					<h2 class="counter-num">1821</h2>
-					<h3>Amazing Place</h3>
-				</div>
-			</div><!-- END COL -->
-			<div class="col-md-3 col-sm-6 col-xs-12 no-padding" data-aos="fade-up">
-				<div class="single-project-complete">
-					<h2 class="counter-num">5660</h2>
-					<h3>In Business</h3>
-				</div>
-			</div><!-- END COL -->
-			<div class="col-md-3 col-sm-6 col-xs-12 no-padding" data-aos="fade-up">
-				<div class="single-project-complete brnone">
-					<h2 class="counter-num">11859</h2>
-					<h3>Support Cases</h3>
-				</div>
-			</div><!-- END COL -->
-		</div><!-- END ROW -->
-	</div><!-- END CONTAINER -->
-</section>
-<!-- END COUNTER -->
 
 <!-- START SPECIAL PACKAGE -->
 <section id="special_package" class="special_package section-padding">
@@ -156,7 +25,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="section-title text-center">
-					<h2>special package</h2>
+					<h2>Tour đặt biệt</h2>
 					<span></span>
 					<!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p> -->
 				</div>
@@ -166,18 +35,20 @@
 			<div class="col-md-12" data-aos="fade-up">
 				<div id="package-slider" class="owl-carousel">
 					<div class="single_package">
-						<img class="img-fluid" src="img/bg/bana3.jpg" alt="">
-						<h5 class="package-name">Ba Na Hill</h5>
+
+						<img class="img-fluid" src="img/package/1.jpg" alt="">
+						<h5 class="package-name">Bà Nà Hill</h5>
+
 						<div class="package-hover">
-							<h5>Ba Na Hill</h5>
-							<span>Starting from $236</span>
+							<h5>Bà Nà Hill</h5>
+							<span>Giá chỉ $236</span>
 							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
+							<span class="time_zone">2 days 1 night</span>
 						</div>
 					</div><!-- END SINGLE PACKAGE -->
 					<div class="single_package">
@@ -185,14 +56,14 @@
 						<h5 class="package-name">The Sun Whell</h5>
 						<div class="package-hover">
 							<h5>The Sun Whell</h5>
-							<span>Starting from $236</span>
+							<span>Giá chỉ $236</span>
 							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
+							<span class="time_zone">3 days 2 night</span>
 						</div>
 					</div><!-- END SINGLE PACKAGE -->
 					<div class="single_package">
@@ -262,13 +133,14 @@
 </section>
 <!-- END SPECIAL PACKAGE -->
 
+
 <!-- START TOP DEALS -->
 <section id="top_deals" class="top_deals section-padding">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12" data-aos="fade-up">
 				<div class="section-title text-center">
-					<h2>Top Place</h2>
+					<h2>các tour đứng đầu</h2>
 					<span></span>
 					<p>Được mọi người bình chọn là những nơi đẹp nhất Đà Nẵng nói riêng, nước Việt Nam nói chung.</p>
 				</div>
@@ -347,66 +219,136 @@
 <!-- END TOP DEALS -->
 
 
-
-<!-- START BLOG -->
-<section id="blog" class="blog_section">
+<!-- START SERVICES -->
+<section id="service" class="our_services">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12" data-aos="fade-up">
-				<div class="section-title text-center wow zoomIn">
-					<h2>Tour Review</h2>
+			<div class="col-md-12 text-center">
+				<div class="section-title">
+					<h2>TOP services</h2>
 					<span></span>
-					<p>Share about you. we are one.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
+				<div class="service">
+					<div class="icon"><i class="fa fa-bed"></i></div>
+					<h4>Hotel Booking</h4>
+					<p>In the evening, freely visit the Asian Park: a leading amusement park in Southeast Asia of world-class standard, you are free to experience "the Sun Wheel". Stay overnight in Da Nang.</p>
+				</div>
+			</div><!-- END COL -->
+			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
+				<div class="service">
+					<div class="icon"><i class="fa fa-plane"></i></div>
+					<h4>Flight Booking</h4>
+					<p>You are present at the Tan Son Nhat Airport, Column 10 - Vietravel's counter, Domestic Terminal. Vietravel's tour guide shall support you in procedures to catch a flight to Da Nang.</p>
+				</div>
+			</div><!-- END COL -->
+			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
+				<div class="service">
+					<div class="icon"><i class="fa fa-ticket"></i></div>
+					<h4>Ticket Booking</h4>
+					<p>You take a coach to visit the Ba Na - Suoi Mo, enjoy the chilly air of the "Da Lat in the Central", then visit Linh Ung Pagoda, Debay Cellars, Le Jardin D'Amour Garden, etc.</p>
+				</div>
+			</div><!-- END COL -->
+			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
+				<div class="service">
+					<div class="icon"><i class="fa fa-ship"></i></div>
+					<h4>View Booking</h4>
+					<p>Continue to visit the new cave in the World Heritage Site of Phong Nha - Ke Bang: Paradise Cave - Viewed as an underground palace, thanks to beautiful.</p>
+				</div>
+			</div><!-- END COL -->
+			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
+				<div class="service">
+					<div class="icon"><i class="fa fa-train"></i></div>
+					<h4>Rail Booking</h4>
+					<p>you will admire the panoramic view of the city, mountain and Son Tra island in  a perfect way. Next, take a coach to the Da Nang airport for a flight to Ho Chi Minh City.</p>
+				</div>
+			</div><!-- END COL -->
+			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
+				<div class="service">
+					<div class="icon"><i class="fa fa-home"></i></div>
+					<h4>Amazing Place</h4>
+					<p>the coach will take you to visit Hoi An Old Town: Bridge Pagoda, Phung Hung Ancient House, Phuoc Kien Assembly Hall, Crafts establishments.</p>
 				</div>
 			</div><!-- END COL -->
 		</div><!-- END ROW -->
-		<div class="row">
-			<div class="col-lg-6" data-aos="fade-up">
-				<div class="single_blog">
-					<div class="blog-text wow fadeInLeft">
-
-						<h4><a href="#">Blog of Me</a></h4>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-						<p><strong> 25 August, 2017</strong></p>
-					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/bg/avata.jpg"/>
-				</div>
-			</div><!--- END COL -->
-			<div class="col-lg-6" data-aos="fade-up">
-				<div class="single_blog">
-					<div class="blog-text wow fadeInLeft">
-						<h4><a href="#">Blog title here</a></h4>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-						<p><strong> 26 August, 2017</strong></p>
-					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/bg/cahep.jpg"/>
-				</div>
-			</div><!--- END COL -->
-			<div class="col-lg-6" data-aos="fade-up">
-				<div class="single_blog">
-					<div class="blog-text wow fadeInRight">
-						<h4><a href="#">Blog title here</a></h4>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-						<p><strong> 27 August, 2017</strong></p>
-					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/bg/bro3.jpg"/>
-				</div>
-			</div><!--- END COL -->
-			<div class="col-lg-6" data-aos="fade-up">
-				<div class="single_blog">
-					<div class="blog-text wow fadeInRight">
-						<h4><a href="#">Blog title here</a></h4>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-						<p><strong> 28 August, 2017</strong></p>
-					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/bg/bana2.jpg"/>
-				</div>
-			</div><!--- END COL -->
-		</div><!--- END ROW -->
-	</div><!--- END CONTAINER -->
+	</div><!-- END CONTAINER -->
 </section>
-<!-- END BLOG -->
+<!-- END SERVICES -->
 
+<!-- START WHY CHOOSE US -->
+<section data-stellar-background-ratio="0.3" class="why_choose section-padding"  style="background-image: url(img/bg/service-bg.jpg);  background-size:cover; background-position: center center;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" data-aos="fade-up">
+				<div class="section-title text-center">
+					<h2 class="section-title-white">why choose us</h2>
+					<span class="section-title-white"></span>
+					<p class="section-title-white">TOP Tour & Travel, được hàng triệu người trên thế giới tin tưởng.</p>
+				</div>
+			</div><!-- END COL -->
+		</div><!-- END ROW -->
+		<div class="row text-center">
+			<div class="col-sm-4 col-xs-12" data-aos="fade-up">
+				<div class="single-choose">
+					<i class="fa fa-star"></i>
+					<h4>Handpicked Hotels</h4>
+
+				</div>
+			</div><!-- END COL -->
+			<div class="col-sm-4 col-xs-12" data-aos="fade-up">
+				<div class="single-choose">
+					<i class="fa fa-globe"></i>
+					<h4>World Class Service</h4>
+
+				</div>
+			</div><!-- END COL -->
+			<div class="col-sm-4 col-xs-12" data-aos="fade-up">
+				<div class="single-choose">
+					<i class="fa fa-thumbs-up"></i>
+					<h4>Best Price Guarantee</h4>
+
+				</div>
+			</div><!-- END COL -->
+		</div><!-- END ROW -->
+	</div><!-- END CONTAINER -->
+</section>
+<!-- END WHY CHOOSE US -->
+
+<!-- START COUNTER -->
+<section class="complete-project-area counter_feature section-padding">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-3 col-sm-6 col-xs-12 no-padding" data-aos="fade-up">
+				<div class="single-project-complete">
+					<h2 class="counter-num">32652</h2>
+					<h3>Happy Customers</h3>
+				</div>
+			</div><!-- END COL -->
+			<div class="col-md-3 col-sm-6 col-xs-12 no-padding" data-aos="fade-up">
+				<div class="single-project-complete">
+					<h2 class="counter-num">1821</h2>
+					<h3>Amazing Place</h3>
+				</div>
+			</div><!-- END COL -->
+			<div class="col-md-3 col-sm-6 col-xs-12 no-padding" data-aos="fade-up">
+				<div class="single-project-complete">
+					<h2 class="counter-num">5660</h2>
+					<h3>In Business</h3>
+				</div>
+			</div><!-- END COL -->
+			<div class="col-md-3 col-sm-6 col-xs-12 no-padding" data-aos="fade-up">
+				<div class="single-project-complete brnone">
+					<h2 class="counter-num">11859</h2>
+					<h3>Support Cases</h3>
+				</div>
+			</div><!-- END COL -->
+		</div><!-- END ROW -->
+	</div><!-- END CONTAINER -->
+</section>
+<!-- END COUNTER -->
 
 
 <!-- START COMPANY PARTNER LOGO  -->

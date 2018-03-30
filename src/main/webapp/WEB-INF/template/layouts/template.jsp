@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -37,11 +37,7 @@
 <!-- component CSS -->
 <link rel="stylesheet" href="css/aos.css">
 
-<!-- Style CSS -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/quy.css">
-<link rel="stylesheet" href="css/review.css">
+
 <!-- start link by Thanh -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
 <link rel="stylesheet" href="css/login.css">
@@ -53,6 +49,12 @@
 	rel="stylesheet" />
 <!-- end link by thanh -->
 <link rel="stylesheet" href="css/info.css">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/quy.css">
+	<link rel="stylesheet" href="css/review.css">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>

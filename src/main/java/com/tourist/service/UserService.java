@@ -7,5 +7,7 @@ import com.tourist.entity.User;
 public interface UserService {
 
 	List<User> getAllUser();
+	User getByUsername();
+
 	
 }
