@@ -35,7 +35,7 @@
 				<div class="service">
 					<div class="icon"><i class="fa fa-bed"></i></div>
 					<h4>Hotel Booking</h4>
-					<p>In the evening, freely visit the Asian Park: a leading amusement park in Southeast Asia of world-class standard, you are free to experience "the Sun Wheel". Stay overnight in Da Nang.</p>
+					<p>Buổi tối, tự do tham quan Asian Park: một công viên giải trí hàng đầu ở Đông Nam Á với tiêu chuẩn đẳng cấp thế giới, bạn được tự do trải nghiệm "Bánh xe trời". Nghỉ đêm tại Đà Nẵng.</p>
 				</div>
 			</div><!-- END COL -->
 			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
@@ -196,7 +196,7 @@
 						</div>
 					</div><!-- END SINGLE PACKAGE -->
 					<div class="single_package">
-						<img class="img-fluid" src="img/package/3.jpg" alt="">
+						<img class="img-fluid" src="img/bg/bro6.jpg" alt="">
 						<h5 class="package-name">La Vang Holy Land</h5>
 						<div class="package-hover">
 							<h5>La Vang Holy Land</h5>
@@ -211,7 +211,7 @@
 						</div>
 					</div><!-- END SINGLE PACKAGE -->
 					<div class="single_package">
-						<img class="img-fluid" src="img/package/4.jpg" alt="">
+						<img class="img-fluid" src="img/bg/bro2.jpg" alt="">
 						<h5 class="package-name">Asia Park</h5>
 						<div class="package-hover">
 							<h5>Asia Park</h5>
@@ -226,7 +226,7 @@
 						</div>
 					</div><!-- END SINGLE PACKAGE -->
 					<div class="single_package">
-						<img class="img-fluid" src="img/package/5.jpg" alt="">
+						<img class="img-fluid" src="img/bg/bro4.jpg" alt="">
 						<h5 class="package-name">Linh Ung temple</h5>
 						<div class="package-hover">
 							<h5>japan</h5>
@@ -241,7 +241,7 @@
 						</div>
 					</div><!-- END SINGLE PACKAGE -->
 					<div class="single_package">
-						<img class="img-fluid" src="img/package/6.jpg" alt="">
+						<img class="img-fluid" src="img/bg/63.jpg" alt="">
 						<h5 class="package-name">Hoi An city</h5>
 						<div class="package-hover">
 							<h5>Hoi An city</h5>
