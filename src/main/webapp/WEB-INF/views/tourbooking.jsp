@@ -1,6 +1,6 @@
 <!-- START TITLE TOP -->
 <section class="section-content section-padding"
-	style="background-image: url(img/bg/section-bg.jpg); background-size: cover; background-position: center center;">
+	style="background-image: url(img/bg/avata.jpg); background-size: cover; background-position: center center;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -17,7 +17,7 @@
 		<div class="row">
 			<div class="col-md-8 col-sm-8 col-xs-12">
 				<div class="single_tour_details">
-					<img src="img/blog/1.jpg" class="img-responsive" alt="image" /> <span>5
+					<img src="img/bg/carong.jpg" class="img-responsive" alt="image" /> <span>5
 						days 4 night</span>
 					<h2 class="title">creativity is intelligence having fun</h2>
 					<p>Lorem ipsum dosectetur adipisicing elit, sed doLorem ipsum
@@ -112,7 +112,7 @@
 				<div id="discount-slider" class="owl-carousel">
 					<div class="single-discount">
 						<div class="single-img">
-							<img src="img/discount/1.jpg" class="img-fluid" alt="" />
+							<img src="img/bg/anhdep3.jpg" class="img-fluid" alt="" />
 							<div class="post-date">
 								<h4>
 									<del>$650</del>
@@ -133,7 +133,7 @@
 					<!-- END SINGLE DISCOUNT -->
 					<div class="single-discount">
 						<div class="single-img">
-							<img src="img/discount/2.jpg" class="img-fluid" alt="" />
+							<img src="img/bg/bana2.jpg" class="img-fluid" alt="" />
 							<div class="post-date">
 								<h4>
 									<del>$650</del>
@@ -154,7 +154,7 @@
 					<!-- END SINGLE DISCOUNT -->
 					<div class="single-discount">
 						<div class="single-img">
-							<img src="img/discount/3.jpg" class="img-fluid" alt="" />
+							<img src="img/bg/63.jpg" class="img-fluid" alt="" />
 							<div class="post-date">
 								<h4>
 									<del>$650</del>
@@ -175,7 +175,7 @@
 					<!-- END SINGLE DISCOUNT -->
 					<div class="single-discount">
 						<div class="single-img">
-							<img src="img/discount/4.jpg" class="img-fluid" alt="" />
+							<img src="img/bg/62.jpg" class="img-fluid" alt="" />
 							<div class="post-date">
 								<h4>
 									<del>$650</del>
@@ -196,7 +196,7 @@
 					<!-- END SINGLE DISCOUNT -->
 					<div class="single-discount">
 						<div class="single-img">
-							<img src="img/discount/5.jpg" class="img-fluid" alt="" />
+							<img src="img/bg/61.jpg" class="img-fluid" alt="" />
 							<div class="post-date">
 								<h4>
 									<del>$650</del>
@@ -217,7 +217,7 @@
 					<!-- END SINGLE DISCOUNT -->
 					<div class="single-discount">
 						<div class="single-img">
-							<img src="img/discount/6.jpg" class="img-fluid" alt="" />
+							<img src="img/bg/sanho.jpg" class="img-fluid" alt="" />
 							<div class="post-date">
 								<h4>
 									<del>$650</del>

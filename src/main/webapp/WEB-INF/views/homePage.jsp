@@ -3,7 +3,7 @@
 
 
 <!-- START HOME -->
-<section id="home" class="home_parallax" style="background-image: url(img/bg/youtube-bg.jpg);  background-size:cover; background-position: center center;">
+<section id="home" class="home_parallax" style="background-image: url(img/bg/avata.jpg);  background-size:cover; background-position: center center;">
 			<a class="player" data-property="{videoURL:'https://youtu.be/f7MskKkn2Jg',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
 		<div class="container">
 			<div class="row">
@@ -79,7 +79,7 @@
 <!-- END SERVICES -->
 
 <!-- START WHY CHOOSE US -->
-<section data-stellar-background-ratio="0.3" class="why_choose section-padding"  style="background-image: url(img/bg/service-bg.jpg);  background-size:cover; background-position: center center;">
+<section data-stellar-background-ratio="0.3" class="why_choose section-padding"  style="background-image: url(img/bg/sunwhell.jpg);  background-size:cover; background-position: center center;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12" data-aos="fade-up">
@@ -166,7 +166,7 @@
 			<div class="col-md-12" data-aos="fade-up">
 				<div id="package-slider" class="owl-carousel">
 					<div class="single_package">
-						<img class="img-fluid" src="img/package/1.jpg" alt="">
+						<img class="img-fluid" src="img/bg/bana3.jpg" alt="">
 						<h5 class="package-name">Ba Na Hill</h5>
 						<div class="package-hover">
 							<h5>Ba Na Hill</h5>
@@ -181,7 +181,7 @@
 						</div>
 					</div><!-- END SINGLE PACKAGE -->
 					<div class="single_package">
-						<img class="img-fluid" src="img/package/2.jpg" alt="">
+						<img class="img-fluid" src="img/bg/khachsan2.jpg" alt="">
 						<h5 class="package-name">The Sun Whell</h5>
 						<div class="package-hover">
 							<h5>The Sun Whell</h5>
@@ -278,7 +278,7 @@
 			<div class="col-sm-4 col-xs-12 no-padding">
 				<div class="grid">
 					<figure class="effect-sadie">
-						<img src="img/portfolio/1.jpg" alt=""/>
+						<img src="img/bg/anhdep3.jpg" alt=""/>
 						<figcaption>
 							<h4>Beautifull Place</h4>
 							<p><a href="info.php">place detail</a></p>
@@ -289,7 +289,7 @@
 			<div class="col-sm-4 col-xs-12 no-padding">
 				<div class="grid">
 					<figure class="effect-sadie">
-						<img src="img/portfolio/2.jpg" alt=""/>
+						<img src="img/bg/anhdep6.jpg" alt=""/>
 						<figcaption>
 							<h4>Beautifull Place</h4>
 							<p><a href="info.php">place detail</a></p>
@@ -300,7 +300,7 @@
 			<div class="col-sm-4 col-xs-12 no-padding">
 				<div class="grid">
 					<figure class="effect-sadie">
-						<img src="img/portfolio/3.jpg" alt=""/>
+						<img src="img/bg/bana2.jpg" alt=""/>
 						<figcaption>
 							<h4>Beautifull Place</h4>
 							<p><a href="info.php">place detail</a></p>
@@ -311,7 +311,7 @@
 			<div class="col-sm-4 col-xs-12 no-padding">
 				<div class="grid">
 					<figure class="effect-sadie">
-						<img src="img/portfolio/4.jpg" alt=""/>
+						<img src="img/bg/63.jpg" alt=""/>
 						<figcaption>
 							<h4>Beautifull Place</h4>
 							<p><a href="info.php">place detail</a></p>
@@ -322,7 +322,7 @@
 			<div class="col-sm-4 col-xs-12 no-padding">
 				<div class="grid">
 					<figure class="effect-sadie">
-						<img src="img/portfolio/5.jpg" alt=""/>
+						<img src="img/bg/62.jpg" alt=""/>
 						<figcaption>
 							<h4>Beautifull Place</h4>
 							<p><a href="info.php">place detail</a></p>
@@ -333,7 +333,7 @@
 			<div class="col-sm-4 col-xs-12 no-padding">
 				<div class="grid">
 					<figure class="effect-sadie">
-						<img src="img/portfolio/6.jpg" alt=""/>
+						<img src="img/bg/61.jpg" alt=""/>
 						<figcaption>
 							<h4>Beautifull Place</h4>
 							<p><a href="info.php">place detail</a></p>
@@ -369,7 +369,7 @@
 						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
 						<p><strong> 25 August, 2017</strong></p>
 					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/blog/blog1.jpg"/>
+					<img class="blog-photo" width="420" height="350" alt="" src="img/bg/avata.jpg"/>
 				</div>
 			</div><!--- END COL -->
 			<div class="col-lg-6" data-aos="fade-up">
@@ -379,7 +379,7 @@
 						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
 						<p><strong> 26 August, 2017</strong></p>
 					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/blog/blog2.jpg"/>
+					<img class="blog-photo" width="420" height="350" alt="" src="img/bg/cahep.jpg"/>
 				</div>
 			</div><!--- END COL -->
 			<div class="col-lg-6" data-aos="fade-up">
@@ -389,7 +389,7 @@
 						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
 						<p><strong> 27 August, 2017</strong></p>
 					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/blog/blog3.jpg"/>
+					<img class="blog-photo" width="420" height="350" alt="" src="img/bg/bro3.jpg"/>
 				</div>
 			</div><!--- END COL -->
 			<div class="col-lg-6" data-aos="fade-up">
@@ -399,7 +399,7 @@
 						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
 						<p><strong> 28 August, 2017</strong></p>
 					</div>
-					<img class="blog-photo" width="420" height="350" alt="" src="img/blog/blog4.jpg"/>
+					<img class="blog-photo" width="420" height="350" alt="" src="img/bg/bana2.jpg"/>
 				</div>
 			</div><!--- END COL -->
 		</div><!--- END ROW -->
@@ -410,7 +410,7 @@
 
 
 <!-- START COMPANY PARTNER LOGO  -->
-<div data-stellar-background-ratio="0.3" class="partner-logo" style="background-image: url(img/bg/partner-bg.jpg);  background-size:cover; background-position: center center;">
+<div data-stellar-background-ratio="0.3" class="partner-logo" style="background-image: url(img/bg/pro.jpg);  background-size:cover; background-position: center center;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12" data-aos="fade-up">
