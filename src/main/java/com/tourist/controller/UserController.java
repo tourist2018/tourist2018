@@ -18,9 +18,7 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
-	
-//	@Autowired
-//	UserRepository<User> userRepo;
+
 
 	
 	@RequestMapping("/info-user")

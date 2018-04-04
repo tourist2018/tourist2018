@@ -15,7 +15,7 @@ public class TourBookingController {
         return "tourbooking";
     }
     
-    @RequestMapping("/listtour")
+        @RequestMapping("/listtour")
     public String getListTour(Model model) {
         model.addAttribute("address", "VietNam");
         return "listtour";

@@ -6,6 +6,7 @@
 *.sw?
 *~
 .#*
+
 .*.md.html
 .DS_Store
 .classpath

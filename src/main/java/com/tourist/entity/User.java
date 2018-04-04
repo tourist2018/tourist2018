@@ -7,6 +7,7 @@ import java.util.UUID;
 
 import javax.persistence.*;
 
+
 @Entity
 @Table(name = "user")
 //@NamedQuery(name="User.findAll", query="SELECT u FROM User u")
@@ -24,7 +25,7 @@ public class User implements Serializable{
 
 	@Column(name="role")
 	@Enumerated(EnumType.STRING)
-	private EnumRole role;//kho :v vai~
+	private EnumRole role;
 
 	public User() {
 		

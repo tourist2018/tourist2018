@@ -1,7 +1,5 @@
 package com.tourist.controller;
 
-import java.util.Map;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +19,7 @@ public class HomeController {
         return "review";
     }
     
-    @RequestMapping("/login")
+    @RequestMapping("/login-user")
     public String getLogin(Model model) {
         model.addAttribute("address", "VietNam");
         return "login";
