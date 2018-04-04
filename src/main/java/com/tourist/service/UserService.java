@@ -8,6 +8,7 @@ public interface UserService {
 
 	List<User> getAllUser();
 	User getByUsername();
+	User createNewUser(User user);
 
 	
 }
