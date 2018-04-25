@@ -13,7 +13,10 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
+  width:  60%;
+  margin-left: 17%;
   opacity: 1;
+  border:  solid;
   /* background: rgba(0, 0, 0, 0.2); */
   z-index: 1;
 }
@@ -84,8 +87,8 @@ html {
   display: table;
 }
 .logmod__tabs li.current a {
-    background: #FFF;
-    color: #f9461d;
+  background: #FFF;
+  color: #f9461d;
 }
 .logmod__tabs li a {
   width: 50%;
@@ -118,6 +121,9 @@ html {
 }
 .logmod__form {
   border-top: 1px solid #e5e5e5;
+  border:  solid;
+  padding: 10px;
+  margin: 17%;
 }
 .logmod__alter {
   display: block;
@@ -188,6 +194,7 @@ html {
 }
 .simform__actions {
   padding: 15px;
+  margin-right: 45px;
   font-size: 14px;
 }
 .simform__actions::after {
@@ -609,5 +616,5 @@ html {
   background-image: url(https://basehold.it/i/24);
 }
 nav#login_file {
-    background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 1);
 }

@@ -19,7 +19,9 @@
         display: flex!important;
     width: 100%;
 }*/
-
+nav.navbar.navbar-toggleable-sm.fixed-top.navbar-light.bg-faded.site-navigation {
+    background-color: #000;
+}
 html{
     box-sizing: border-box;
     font-family: sans-serif;

@@ -20,15 +20,25 @@
         <!-- <put-attribute name="title" value="Home Page" />   -->
         <put-attribute name="body" value="/WEB-INF/views/homePage.jsp" />  
     </definition>
+    <!-- Home Page -->
+    <definition name="index" extends="base.definition">
+        <!-- <put-attribute name="title" value="Home Page" />   -->
+        <put-attribute name="body" value="/WEB-INF/views/homePage.jsp" />
+    </definition>
 
     <!-- Review Page  -->
     <definition name="review" extends="base.definition">  
         <put-attribute name="body" value="/WEB-INF/views/review.jsp" />  
     </definition>  
 
-    <definition name="login-user" extends="base.definition">
+    <definition name="login-and-register" extends="base.definition">
         <put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
     </definition>
+
+    <definition name="login-test" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/login-test.jsp" />
+    </definition>
+
     <definition name="infoUser" extends="base.definition">  
         <put-attribute name="body" value="/WEB-INF/views/infoUser.jsp" />  
     </definition>
