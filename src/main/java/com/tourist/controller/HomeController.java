@@ -8,9 +8,13 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-	@RequestMapping(value= {"/", "/home"})
+	@RequestMapping(value= {"/home"})
     public ModelAndView home(Model model) {
         return new ModelAndView("homePage");
+    }
+    @RequestMapping(value= {"/"})
+    public String homePage(Model model) {
+        return "redirect:/home";
     }
      
     @RequestMapping("/review")
@@ -19,10 +23,10 @@ public class HomeController {
         return "review";
     }
     
-    @RequestMapping("/login-user")
+    /*@RequestMapping("/login-user")
     public String getLogin(Model model) {
         model.addAttribute("address", "VietNam");
         return "login";
-    }
+    }*/
 
 }

@@ -17,9 +17,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages= {"com.tourist"})
-@EntityScan(basePackages= {"com.tourist.entity"})
-@ComponentScan(basePackages= {"com.tourist"})
 @PropertySource("classpath:application.properties")
 public class DatabaseConfig {
 	
