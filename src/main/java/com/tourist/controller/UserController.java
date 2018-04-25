@@ -21,7 +21,7 @@ public class UserController {
 
 
 	
-	@RequestMapping("/")
+	@RequestMapping("/info-user")
     public ModelAndView next(Model model) {
 		ModelAndView modelAndView = new ModelAndView("infoUser");
         
