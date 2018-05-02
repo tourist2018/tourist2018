@@ -6,9 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-/**
- * Created by Ngoc Quy on 4/22/2018.
- */
 @Controller
 public class CommonController {
 
@@ -20,8 +17,8 @@ public class CommonController {
         if (user.getAuthorities().toString().contains(ROLE_ADMIN)) {
             return "redirect:/home";
         } else if (user.getAuthorities().toString().contains(ROLE_USER)) {
-            return "redirect:/tourbooking";
+            return "redirect:/home";
         }
-        return "login";
+        return "login-tourist";
     }
 }

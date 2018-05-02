@@ -15,9 +15,6 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import javax.sql.DataSource;
 
-/**
- * Created by Ngoc Quy on 4/5/2018.
- */
 
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Configuration
@@ -48,14 +45,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/login-test", "/home").permitAll()
+                .antMatchers("/login-tourist", "/home").permitAll()
                 .antMatchers("/redirect").authenticated()
                 .antMatchers("/redirectToAnotherPage").hasRole(USER)
+                    .antMatchers("/tour-booking").hasAuthority(USER)
+                .antMatchers("/home").hasAnyAuthority(USER,ADMIN)
                 .and()
-                .formLogin().loginPage("/login-test")
+                .formLogin().loginPage("/login-tourist")
                 .defaultSuccessUrl("/redirect")
                 .usernameParameter("username")
-                .passwordParameter("password");
+                .passwordParameter("password")
+                .and()
+                .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                .logoutSuccessUrl("/login-tourist")
+                .and()
+                .exceptionHandling().accessDeniedPage("/denied");
     }
 
     @Autowired

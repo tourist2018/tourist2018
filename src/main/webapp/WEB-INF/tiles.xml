@@ -35,7 +35,7 @@
         <put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
     </definition>
 
-    <definition name="login-test" extends="base.definition">
+    <definition name="login-tourist" extends="base.definition">
         <put-attribute name="body" value="/WEB-INF/views/login-test.jsp" />
     </definition>
 

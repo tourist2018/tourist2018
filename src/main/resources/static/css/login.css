@@ -9,6 +9,7 @@ html {
 .logmod {
   display: block;
   position: relative;
+  border-radius: 5px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -122,8 +123,9 @@ html {
 .logmod__form {
   border-top: 1px solid #e5e5e5;
   border:  solid;
-  padding: 10px;
+  /* padding: 10px; */
   margin: 17%;
+  border-radius: 5px;
 }
 .logmod__alter {
   display: block;
@@ -194,8 +196,9 @@ html {
 }
 .simform__actions {
   padding: 15px;
-  margin-right: 45px;
+  /* margin-right: 45px; */
   font-size: 14px;
+  background-color:  white;
 }
 .simform__actions::after {
   clear: both;
@@ -337,6 +340,7 @@ html {
   box-shadow: none;
   min-width: 90px;
   padding: 10px 14px;
+  margin-right:  10px;
 }
 .btn.full, .simform__actions .full.sumbit {
   width: 100%;
@@ -617,4 +621,22 @@ html {
 }
 nav#login_file {
   background: rgba(0, 0, 0, 1);
+}
+.font-back-in-form-login{
+  background-color: #f9461d;
+  position:  relative;
+  top: -61px;
+  padding-top: 110px;
+  padding-bottom: 50px;
+}
+.font-back-in-form {
+  background-color: #f9461d;
+  position:  relative;
+  top: -61px;
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+.sminputs.submit-register {
+  background-color:  white;
 }

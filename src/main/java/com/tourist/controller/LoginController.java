@@ -12,9 +12,6 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
 
 
-/**
- * Created by Ngoc Quy on 4/5/2018.
- */
 @Controller
 public class LoginController {
 
@@ -29,9 +26,9 @@ public class LoginController {
         return modelAndView;
     }
 
-    @RequestMapping(value = {"/login-test"})
+    @RequestMapping(value = {"/login-tourist"})
     public ModelAndView loginTest(ModelMap model){
-        ModelAndView modelAndView = new ModelAndView("login-test");
+        ModelAndView modelAndView = new ModelAndView("login-tourist");
         User login = new User();
         model.addAttribute("login",login);
         return modelAndView;
@@ -49,4 +46,8 @@ public class LoginController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "denied")
+    public String getPageDenied(){
+        return "denied";
+    }
 }

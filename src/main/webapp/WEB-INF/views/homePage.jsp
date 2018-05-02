@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	isELIgnored="false" pageEncoding="UTF-8"%>
-
+		 isELIgnored="false" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!-- START HOME -->
 <section id="home" class="home_parallax" style="background-image: url(img/bg/avata.jpg);  background-size:cover; background-position: center center;">
-			<a class="player" data-property="{videoURL:'https://youtu.be/f7MskKkn2Jg',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
+	<a class="player" data-property="{videoURL:'https://youtu.be/f7MskKkn2Jg',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
 				<div class="hero-text">
 					<h1>DU LỊCH TP ĐÀ NẴNG</h1>
 					<p>Top tourist, nơi chia sẽ cảm xúc và khám phá những địa điểm du lịch hấp dẫn. <br />Hãy để những trải nghiệm được lưu giữ nơi đây.</p>
@@ -17,7 +17,7 @@
 		</div><!--- END ROW -->
 	</div><!--- END CONTAINER -->
 </section>
-		<!-- END  HOME DESIGN -->
+<!-- END  HOME DESIGN -->
 
 <!-- START SPECIAL PACKAGE -->
 <section id="special_package" class="special_package section-padding">
@@ -33,99 +33,28 @@
 		</div><!-- END ROW -->
 		<div class="row text-center">
 			<div class="col-md-12" data-aos="fade-up">
-				<div id="package-slider" class="owl-carousel">
-					<div class="single_package">
-
-						<img class="img-fluid" src="img/package/1.jpg" alt="">
-						<h5 class="package-name">Bà Nà Hill</h5>
-
-						<div class="package-hover">
-							<h5>Bà Nà Hill</h5>
-							<span>Giá chỉ $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">2 days 1 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-					<div class="single_package">
-						<img class="img-fluid" src="img/bg/khachsan2.jpg" alt="">
-						<h5 class="package-name">The Sun Whell</h5>
-						<div class="package-hover">
-							<h5>The Sun Whell</h5>
-							<span>Giá chỉ $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">3 days 2 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-					<div class="single_package">
-						<img class="img-fluid" src="img/package/3.jpg" alt="">
-						<h5 class="package-name">La Vang Holy Land</h5>
-						<div class="package-hover">
-							<h5>La Vang Holy Land</h5>
-							<span>Starting from $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-					<div class="single_package">
-						<img class="img-fluid" src="img/package/4.jpg" alt="">
-						<h5 class="package-name">Asia Park</h5>
-						<div class="package-hover">
-							<h5>Asia Park</h5>
-							<span>Starting from $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-					<div class="single_package">
-						<img class="img-fluid" src="img/package/5.jpg" alt="">
-						<h5 class="package-name">Linh Ung temple</h5>
-						<div class="package-hover">
-							<h5>japan</h5>
-							<span>Starting from $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
-					<div class="single_package">
-						<img class="img-fluid" src="img/package/6.jpg" alt="">
-						<h5 class="package-name">Hoi An city</h5>
-						<div class="package-hover">
-							<h5>Hoi An city</h5>
-							<span>Starting from $236</span>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<span class="time_zone">5 days 4 night</span>
-						</div>
-					</div><!-- END SINGLE PACKAGE -->
+				<div id="package-slider">
+					<c:if test="${not empty lists}">
+						<c:forEach var="listValue" items="${lists}">
+							<div class="single_package">
+								<img class="img-fluid" src="${listValue.image}" alt="">
+								<h5 class="package-name">${listValue.address}</h5>
+								<div class="package-hover">
+									<h5>${listValue.address}</h5>
+									<span>Giá chỉ $${listValue.costTour}</span>
+									<p>${listValue.title}</p>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<a href="tour-booking?id=${listValue.id}">
+										<span class="time_zone">${listValue.tourTimes}</span>
+									</a>
+								</div>
+							</div><!-- END SINGLE PACKAGE -->
+						</c:forEach>
+					</c:if>
 				</div>
 			</div><!-- END COL -->
 		</div><!-- END ROW -->
