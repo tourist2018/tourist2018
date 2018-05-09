@@ -41,6 +41,10 @@ public class Tour implements Serializable {
     @Column(name = "tour_time")
     private String tourTimes;
 
+    @Column(name = "quantity")
+    private int quantity;
+
+
     public Tour() {
 
     }
@@ -49,7 +53,7 @@ public class Tour implements Serializable {
         this.setId(id);
     }
 
-    public Tour(String id, String title, String content, String address, String image, Date date_start, Date date_end, String tour_time, int cost) {
+    public Tour(String id, String title, String content, String address, String image, Date date_start, Date date_end, String tour_time, int cost, int quantity) {
         this.setId(id);
         this.setTitle(title);
         this.setAddress(address);
@@ -59,6 +63,7 @@ public class Tour implements Serializable {
         this.setDateEnd(date_end);
         this.setTourTimes(tour_time);
         this.setCostTour(cost);
+        this.setQuantity(quantity);
     }
 
 
@@ -129,4 +134,11 @@ public class Tour implements Serializable {
     }
 
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 }

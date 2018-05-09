@@ -1,10 +1,8 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-</head>
-<body style="margin-top: 96px; background-color: #D4CDCE;">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 isELIgnored="false" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<u:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
 	<table id="example" class="table table-striped table-bordered"
 		style="width: 100%;">
 		<thead>
@@ -15,61 +13,28 @@
 				<th><h6>Date end</h6></th>
 				<th><h6>Salary</h6></th>
 				<th><h6>Note</h6></th>
+                <th></th>
 			</tr>
 		</thead>
 		<tbody>
+<c:if test="${not empty lists}">
+    <c:forEach var="listValue" items="${lists}">
 			<tr>
-				<td>Nguyễn Ngọc Thanh</td>
-				<td>tour korea</td>
-				<td>23/12/2018</td>
-				<td>09/1/2019</td>
-				<td>$620,800</td>
-				<td>thanh handsome ==]]</td>
+				<td>${listValue.user.username}</td>
+				<td>${listValue.tour.title}</td>
+				<td>${listValue.tour.dateStart}</td>
+				<td>${listValue.tour.dateEnd}</td>
+				<td>$${listValue.tour.costTour}</td>
+				<td>${listValue.statusBooking}</td>
+                <td>
+                    <input style="width: 120px;" class="btn btn-default"  id="result" value="Đang đợi">
+                    <input type="button" class="btn btn-danger" id="cancel" value="Hủy">
+                </td>
 			</tr>
-			<tr>
-				<td>Hoang Ba Ngoc Quy</td>
-				<td>tour china</td>
-				<td>12/11/2018</td>
-				<td>23/11/2018</td>
-				<td>$120,800</td>
-				<td>3m/2 :))</td>
-			</tr>
-
-			<tr>
-				<td>Vo Quang Tuan</td>
-				<td>tour Quang Nam</td>
-				<td>12/11/2018</td>
-				<td>13/11/2018</td>
-				<td>$12</td>
-				<td>best alcohol =))</td>
-			</tr>
-			<tr>
-				<td>Luong Thi Thu Thao</td>
-				<td>tour Hue</td>
-				<td>12/11/2018</td>
-				<td>14/11/2018</td>
-				<td>$22,000</td>
-				<td>Thao Crazy</td>
-			</tr>
-			<tr>
-				<td>Huynh Thi kim oanh</td>
-				<td>tour Tp HCM</td>
-				<td>12/11/2018</td>
-				<td>17/11/2018</td>
-				<td>$223,100</td>
-				<td>miss you !!</td>
-			</tr>
-			<tr>
-				<td>Vo Thi Bich Tu</td>
-				<td>tour Canh Duong</td>
-				<td>12/11/2018</td>
-				<td>14/11/2018</td>
-				<td>$404,200</td>
-				<td>Thi Store !!</td>
-			</tr>
-
+    </c:forEach>
+</c:if>
 		</tbody>
-		<tfoot>
+		<%--<tfoot>
 			<tr style="color: #f9461d">
 				<th><h6>Performer</h6></th>
 				<th><h6>Name Tour</h6></th>
@@ -78,7 +43,5 @@
 				<th><h6>Salary</h6></th>
 				<th><h6>Note</h6></th>
 			</tr>
-		</tfoot>
+		</tfoot>--%>
 	</table>
-</body>
-</html>

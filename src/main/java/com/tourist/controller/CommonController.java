@@ -14,6 +14,7 @@ public class CommonController {
     @RequestMapping(value = "/redirect", method = RequestMethod.GET)
     public String determineTargetUrl() {
         User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
         if (user.getAuthorities().toString().contains(ROLE_ADMIN)) {
             return "redirect:/home";
         } else if (user.getAuthorities().toString().contains(ROLE_USER)) {

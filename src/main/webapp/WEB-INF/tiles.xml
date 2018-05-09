@@ -49,7 +49,7 @@
 	</definition>
 
 	<!-- List Tour -->
-	<definition name="listtour" extends="base.definition">
+	<definition name="list-tour" extends="base.definition">
 		<put-attribute name="body" value="/WEB-INF/views/listtour.jsp" />
 	</definition>
 

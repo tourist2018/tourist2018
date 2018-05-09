@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          isELIgnored="false" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<u:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <c:choose>
     <c:when  test="${not empty oneTour }">
         <!-- START TITLE TOP -->
@@ -60,15 +61,17 @@
                                                 <p>Giá tiền: <strong>$${oneTour.costTour}</strong></p>
                                             </div>
                                             <div class="col-6">
-                                                <p>Số lượng: <strong>$${oneTour.costTour}</strong></p>
+                                                <p>Số lượng: <strong>$${oneTour.quantity}</strong></p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="actions">
                                             <input type="button" value="BOOKING NOW!" name="submit"
+                                                   STYLE="width: 200px;"
                                                    id="submitButton" class="btn btn-lg btn-contact-bg"
                                                    title="Submit Your Message!"/>
+                                            <button class="btn btn-default"><a href="${contextPath}/list-tour">TOUR ĐÃ ĐẶT</a></button>
                                         </div>
                                     </div>
                                 </form>

@@ -2,6 +2,7 @@ package com.tourist.entity;
 
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.UUID;
 
 import javax.persistence.*;
@@ -25,6 +26,9 @@ public class User implements Serializable {
     @Column(name = "role")
     @Enumerated(EnumType.STRING)
     private EnumRole role;
+
+    @OneToMany(mappedBy = "user")
+    private List<OrderTour> ordertours;
 
     public User() {
         super();
@@ -99,5 +103,13 @@ public class User implements Serializable {
         result = 31 * result + password.hashCode();
         result = 31 * result + role.hashCode();
         return result;
+    }
+
+    public List<OrderTour> getOrdertours() {
+        return ordertours;
+    }
+
+    public void setOrdertours(List<OrderTour> ordertours) {
+        this.ordertours = ordertours;
     }
 }
