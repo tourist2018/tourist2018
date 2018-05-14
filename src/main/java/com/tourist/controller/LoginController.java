@@ -18,9 +18,9 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = {"/login-and-register"},method = RequestMethod.GET)
+    @RequestMapping(value = {"/register"},method = RequestMethod.GET)
     public ModelAndView loginAndRegister(ModelMap model){
-        ModelAndView modelAndView = new ModelAndView("login-and-register");
+        ModelAndView modelAndView = new ModelAndView("register");
         User userForm = new User();
         model.addAttribute("userForm",userForm);
         return modelAndView;
@@ -35,15 +35,11 @@ public class LoginController {
     }
 
     @RequestMapping(value = {"/registration"},method = RequestMethod.POST)
-    public ModelAndView createNewUser(@Valid User userForm){
-        ModelAndView modelAndView = new ModelAndView();
+    public String createNewUser(@Valid User userForm){
 
             userService.createNewUser(userForm);
-            modelAndView.addObject("success","User has been registered successfully");
-            modelAndView.addObject("userForm",new User());
-            modelAndView.setViewName("login-and-register");
 
-        return modelAndView;
+        return "redirect:/login-tourist";
     }
 
     @RequestMapping(value = "denied")

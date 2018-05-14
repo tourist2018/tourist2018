@@ -1,10 +1,13 @@
 package com.tourist.service;
 
+import com.tourist.entity.EnumStatusBooking;
 import com.tourist.entity.OrderTour;
 import com.tourist.repository.OrdertourRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -15,6 +18,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     protected OrdertourRepository ordertourRepository;
+
 
     @Override
     public List<OrderTour> getAllOrder() {
@@ -32,27 +36,64 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    public List<OrderTour> getOrderByUser_IdAndStatusBookingIsNotLike(String userId, String status) {
+        return null;
+    }
+
+    @Override
     public OrderTour getOrderById(String id) {
         return ordertourRepository.findById(id);
     }
 
+    @Override
+    public void checkDoneOrderTour(OrderTour orderTourForm) {
+        OrderTour orderTour = ordertourRepository.findById(orderTourForm.getId());
+        System.out.println("-------"+orderTour.getStatusBooking()+" : "+orderTour.getId());
+        orderTour.setStatusBooking(EnumStatusBooking.DONE);
+        ordertourRepository.save(orderTour);
+    }
 
     @Override
-    public int getSumOrderByUser(String id) {
-        int sum = 0;
-        try {
-            List<OrderTour> lists = ordertourRepository.findAll();
-            sum = lists.size();
-        }catch (Exception e) {
+    public void checkCancelOrderTour(OrderTour orderTourForm) {
+        OrderTour orderTour = ordertourRepository.findById(orderTourForm.getId());
+        orderTour.setStatusBooking(EnumStatusBooking.CANCEL);
+        ordertourRepository.save(orderTour);
+    }
+
+    @Override
+    public void createOrderTour(OrderTour orderTour) {
+        OrderTour orderTourBooking = new OrderTour();
+        orderTourBooking.setStatusBooking(EnumStatusBooking.WAITING);
+        orderTourBooking.setNote("Đầy đủ");
+        Date today = new Date(System.currentTimeMillis());
+        orderTourBooking.setDateBooking(today);
+        orderTourBooking.setUser(orderTour.getUser());
+        orderTourBooking.setTour(orderTour.getTour());
+        ordertourRepository.save(orderTourBooking);
+    }
+
+    @Override
+    public void deleteOrderTour(String orderTour) {
+        try{
+            ordertourRepository.delete(orderTour);
+        }
+        catch (Exception e){
             System.out.println(e.toString());
         }
-//        sum = orderRepository.sumIdByUser("2ef674ac-f522-40ed-88f7-b2b44424b43d");
-
-        return sum;
     }
 
-    @Override
-    public int getSumOrderEmpty() {
-        return 0;
-    }
+//
+//    @Override
+//    public Double getSumOrderByUser(String status, String id) {
+//        Double sum = 1.0;
+//        try {
+//            Double lists = ordertourRepository.findOrderByTour_Id(status, id);
+//            sum = lists;
+//        }catch (Exception e) {
+//            System.out.println(e.toString());
+//        }
+//
+//        return sum;
+//    }
+
 }

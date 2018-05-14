@@ -76,7 +76,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                 <ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link" href="/login-tourist">Login</a></li>
-					<li class="nav-item"><a class="nav-link" href="/login-and-register">Register</a></li>
+					<li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
                     <li class="nav-item"><a class="nav-link" href="/home">SVTH: Thảo</a></li>
                 </ul>
             </div>

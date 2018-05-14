@@ -13,7 +13,13 @@
         <!-- <put-attribute name="menu" value="/WEB-INF/template/layouts/_menu.jsp" />  --> 
         <put-attribute name="body" value="" />  
         <put-attribute name="footer" value="/WEB-INF/template/layouts/_footer.jsp" />  
-    </definition>  
+    </definition>
+
+    <!-- Base Admin -->
+    <definition name="base.admin"
+                template="/WEB-INF/admin_1/template/template.jsp">
+        <put-attribute name="body" value="" />
+    </definition>
         
     <!-- Home Page -->
     <definition name="homePage" extends="base.definition">  
@@ -31,12 +37,12 @@
         <put-attribute name="body" value="/WEB-INF/views/review.jsp" />  
     </definition>  
 
-    <definition name="login-and-register" extends="base.definition">
-        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
+    <definition name="register" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/register.jsp" />
     </definition>
 
     <definition name="login-tourist" extends="base.definition">
-        <put-attribute name="body" value="/WEB-INF/views/login-test.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
     </definition>
 
     <definition name="infoUser" extends="base.definition">  
@@ -52,5 +58,14 @@
 	<definition name="list-tour" extends="base.definition">
 		<put-attribute name="body" value="/WEB-INF/views/listtour.jsp" />
 	</definition>
+
+    <!--admin-->
+    <definition name="dashboard" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/admin.jsp" />
+    </definition>
+    <definition name="admin-all-order" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/all_order.jsp" />
+    </definition>
+
 
 </tiles-definitions> 

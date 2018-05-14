@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          isELIgnored="false" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <u:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <c:choose>
     <c:when  test="${not empty oneTour }">
@@ -42,7 +43,9 @@
                         <div class="book_now">
                             <h4>Tour Booking</h4>
                             <div class="row">
-                                <form action="#" method="post">
+                                <form:form action="${contextPath}/form-booking" method="post" modelAttribute="form_booking" >
+                                    <form:input path="tour" type="hidden" value="${oneTour.id}"/>
+                                    <form:input path="user" type="hidden" value="${user_id}"/>
                                     <div class="form-group col-md-12">
                                         <h4>Tên tour:</h4>
                                     </div>
@@ -61,20 +64,20 @@
                                                 <p>Giá tiền: <strong>$${oneTour.costTour}</strong></p>
                                             </div>
                                             <div class="col-6">
-                                                <p>Số lượng: <strong>$${oneTour.quantity}</strong></p>
+                                                <p>Số lượng: <strong>${numberTour}</strong></p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="actions">
-                                            <input type="button" value="BOOKING NOW!" name="submit"
+                                            <input type="submit" value="BOOKING NOW!" name="submit"
                                                    STYLE="width: 200px;"
                                                    id="submitButton" class="btn btn-lg btn-contact-bg"
                                                    title="Submit Your Message!"/>
                                             <button class="btn btn-default"><a href="${contextPath}/list-tour">TOUR ĐÃ ĐẶT</a></button>
                                         </div>
                                     </div>
-                                </form>
+                                </form:form>
                             </div>
                         </div>
                         <div class="tag">

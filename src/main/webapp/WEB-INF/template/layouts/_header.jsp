@@ -1,4 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         isELIgnored="false" pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!-- START PRELOADER -->
 <div class="preloader">
     <div class="status">
@@ -22,6 +27,14 @@
                 <li class="nav-item"><a class="nav-link" href="#special_package">top tour</a></li>
                 <li class="nav-item"><a class="nav-link" href="#top_deals">service</a></li>
                 <li class="nav-item"><a class="nav-link" href="#deals_discount">about</a></li>
+                <c:if test="${pageContext.request.userPrincipal.name != null}">
+                    <form id="logoutForm" method="POST" action="${contextPath}/logout">
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                    </form>
+
+                    <li class="nav-item"><a class="nav-link" onclick="document.forms['logoutForm'].submit()">Logout</a></li>
+
+                </c:if>
             </ul>
         </div>
     </div>

@@ -15,10 +15,10 @@ import com.tourist.entity.User;
 @Repository
 @Transactional
 public interface UserRepository  extends JpaRepository<User, String> {
-	
-	List<User> findAll();
+
 	User findByUsername(String username);
 	User findByPassword(String password);
-	
+	User findById(String id);
+	void deleteUserById(String id);
 	
 }

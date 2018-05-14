@@ -1,11 +1,9 @@
 package com.tourist.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -44,6 +42,8 @@ public class Tour implements Serializable {
     @Column(name = "quantity")
     private int quantity;
 
+    @OneToMany(mappedBy = "tour")
+    private List<OrderTour> ordertours;
 
     public Tour() {
 
@@ -67,9 +67,13 @@ public class Tour implements Serializable {
     }
 
 
-    public String getAddress() { return address; }
+    public String getAddress() {
+        return address;
+    }
 
-    public void setAddress(String address) { this.address = address; }
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public String getId() {
         return id;
@@ -103,7 +107,9 @@ public class Tour implements Serializable {
         this.image = image;
     }
 
-    public Date getDateStart() {return dateStart;}
+    public Date getDateStart() {
+        return dateStart;
+    }
 
     public void setDateStart(Date dateStart) {
         this.dateStart = dateStart;
@@ -140,5 +146,14 @@ public class Tour implements Serializable {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+
+    public List<OrderTour> getOrdertours() {
+        return ordertours;
+    }
+
+    public void setOrdertours(List<OrderTour> ordertours) {
+        this.ordertours = ordertours;
     }
 }

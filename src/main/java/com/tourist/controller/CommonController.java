@@ -16,7 +16,7 @@ public class CommonController {
         User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 
         if (user.getAuthorities().toString().contains(ROLE_ADMIN)) {
-            return "redirect:/home";
+            return "redirect:/admin/index";
         } else if (user.getAuthorities().toString().contains(ROLE_USER)) {
             return "redirect:/home";
         }
