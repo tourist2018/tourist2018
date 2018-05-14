@@ -81,8 +81,8 @@
 					<figure class="effect-sadie">
 						<img src="img/bg/anhdep3.jpg" alt=""/>
 						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
+							<h4>Địa điểm đẹp</h4>
+							<p><a href="info.php">xem chi tiết</a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -92,8 +92,8 @@
 					<figure class="effect-sadie">
 						<img src="img/bg/anhdep6.jpg" alt=""/>
 						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
+							<h4>Địa điểm đẹp</h4>
+							<p><a href="info.php">xem chi tiết</a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -103,8 +103,8 @@
 					<figure class="effect-sadie">
 						<img src="img/bg/bana2.jpg" alt=""/>
 						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
+							<h4>Địa điểm đẹp</h4>
+							<p><a href="info.php">xem chi tiết </a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -114,8 +114,19 @@
 					<figure class="effect-sadie">
 						<img src="img/bg/63.jpg" alt=""/>
 						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
+							<h4>Địa điểm đẹp</h4>
+							<p><a href="info.php">xem chi tiết </a></p>
+						</figcaption>
+					</figure>
+				</div><!--- END GRID -->
+			</div><!--- END COL -->
+			<div class="col-sm-4 col-xs-12 no-padding">
+				<div class="grid">
+					<figure class="effect-sadie">
+						<img src="img/bg/bro6.jpg" alt=""/>
+						<figcaption>
+							<h4>Địa điểm đẹp</h4>
+							<p><a href="info.php">xem chi tiết </a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -125,19 +136,8 @@
 					<figure class="effect-sadie">
 						<img src="img/bg/62.jpg" alt=""/>
 						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
-						</figcaption>
-					</figure>
-				</div><!--- END GRID -->
-			</div><!--- END COL -->
-			<div class="col-sm-4 col-xs-12 no-padding">
-				<div class="grid">
-					<figure class="effect-sadie">
-						<img src="img/bg/61.jpg" alt=""/>
-						<figcaption>
-							<h4>Beautifull Place</h4>
-							<p><a href="info.php">place detail</a></p>
+							<h4>Địa điểm đẹp</h4>
+							<p><a href="info.php">xem chi tiết</a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -154,7 +154,7 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<div class="section-title">
-					<h2>TOP services</h2>
+					<h2>Dịch Vụ Top</h2>
 					<span></span>
 				</div>
 			</div>
@@ -163,43 +163,43 @@
 			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
 				<div class="service">
 					<div class="icon"><i class="fa fa-bed"></i></div>
-					<h4>Hotel Booking</h4>
-					<p>In the evening, freely visit the Asian Park: a leading amusement park in Southeast Asia of world-class standard, you are free to experience "the Sun Wheel". Stay overnight in Da Nang.</p>
+					<h4>Đặt phòng khác sạn</h4>
+					<p>Vào buổi tối, tự do tham quan Công Viên Châu Á: một công viên giải trí hàng đầu ở Đông Nam Á tiêu chuẩn đẳng cấp thế giới, bạn được tự do trải nghiệm "Bánh Xe Mặt Trời". Nghỉ đêm tại Đà Nẵng.</p>
 				</div>
 			</div><!-- END COL -->
 			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
 				<div class="service">
 					<div class="icon"><i class="fa fa-plane"></i></div>
-					<h4>Flight Booking</h4>
-					<p>You are present at the Tan Son Nhat Airport, Column 10 - Vietravel's counter, Domestic Terminal. Vietravel's tour guide shall support you in procedures to catch a flight to Da Nang.</p>
+					<h4>Đặt vé máy bay</h4>
+					<p>Bạn đang có mặt tại sân bay Tân Sơn Nhất, Cột 10 - Quầy của Vietravel, Nhà ga nội địa. Hướng dẫn viên của Vietravel sẽ hỗ trợ bạn trong các thủ tục để đón chuyến bay đến Đà Nẵng.</p>
 				</div>
 			</div><!-- END COL -->
 			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
 				<div class="service">
 					<div class="icon"><i class="fa fa-ticket"></i></div>
-					<h4>Ticket Booking</h4>
-					<p>You take a coach to visit the Ba Na - Suoi Mo, enjoy the chilly air of the "Da Lat in the Central", then visit Linh Ung Pagoda, Debay Cellars, Le Jardin D'Amour Garden, etc.</p>
+					<h4>Đặt vé</h4>
+					<p>Quý khách đi xe đến thăm Bà Nà - Suối Mơ, tận hưởng không khí lạnh giá của "Đà Lạt ở miền Trung", sau đó tham quan Chùa Linh Ứng, Hầm Debay, Vườn Lê Jardin D'Amour, vv.</p>
 				</div>
 			</div><!-- END COL -->
 			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
 				<div class="service">
 					<div class="icon"><i class="fa fa-ship"></i></div>
-					<h4>View Booking</h4>
-					<p>Continue to visit the new cave in the World Heritage Site of Phong Nha - Ke Bang: Paradise Cave - Viewed as an underground palace, thanks to beautiful.</p>
+					<h4>Đặt chỗ</h4>
+					<p>Tiếp tục tham quan hang động mới tại Di sản thế giới Phong Nha - Kẻ Bàng: Paradise Cave - Được xem là cung điện ngầm, nhờ vào cảnh đẹp.</p>
 				</div>
 			</div><!-- END COL -->
 			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
 				<div class="service">
 					<div class="icon"><i class="fa fa-train"></i></div>
-					<h4>Rail Booking</h4>
-					<p>you will admire the panoramic view of the city, mountain and Son Tra island in  a perfect way. Next, take a coach to the Da Nang airport for a flight to Ho Chi Minh City.</p>
+					<h4>Đặt vé tàu hỏa</h4>
+					<p>Bạn có thể mua vé trực tiếp tại quầy vé ở ga hoặc có thể đặt trên website Tauhoa.com.vn , tàu hỏa nối dài từ hà nội đến Sài gòn và giá cả rất phải chăng ahihi !</p>
 				</div>
 			</div><!-- END COL -->
 			<div class="col-lg-4 col-sm-6 col-xs-12" data-aos="fade-up">
 				<div class="service">
 					<div class="icon"><i class="fa fa-home"></i></div>
-					<h4>Amazing Place</h4>
-					<p>the coach will take you to visit Hoi An Old Town: Bridge Pagoda, Phung Hung Ancient House, Phuoc Kien Assembly Hall, Crafts establishments.</p>
+					<h4>Địa điểm tuyệt vời</h4>
+					<p>Các địa điểm đẹp ở đà nẵng như : Bà nà hill , Bán đảo sơn trà , Ngủ hành sơn , cầu rồng , trần thị lý , sông hàn , Da Nang với bãi biển dài và đẹp tuyệt với :)) , gần đó có Hội An một nơi không gian cổ kính đẹp và thú vị .</p>
 				</div>
 			</div><!-- END COL -->
 		</div><!-- END ROW -->
@@ -208,12 +208,12 @@
 <!-- END SERVICES -->
 
 <!-- START WHY CHOOSE US -->
-<section data-stellar-background-ratio="0.3" class="why_choose section-padding"  style="background-image: url(img/bg/service-bg.jpg);  background-size:cover; background-position: center center;">
+<section data-stellar-background-ratio="0.3" class="why_choose section-padding"  style="background-image: url(img/bg/sunwhell.jpg);  background-size:cover; background-position: center center;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12" data-aos="fade-up">
 				<div class="section-title text-center">
-					<h2 class="section-title-white">why choose us</h2>
+					<h2 class="section-title-white">Tại sao chọn chúng tôi</h2>
 					<span class="section-title-white"></span>
 					<p class="section-title-white">TOP Tour & Travel, được hàng triệu người trên thế giới tin tưởng.</p>
 				</div>
@@ -223,21 +223,21 @@
 			<div class="col-sm-4 col-xs-12" data-aos="fade-up">
 				<div class="single-choose">
 					<i class="fa fa-star"></i>
-					<h4>Handpicked Hotels</h4>
+					<h4>Khác Sạn hiện đại</h4>
 
 				</div>
 			</div><!-- END COL -->
 			<div class="col-sm-4 col-xs-12" data-aos="fade-up">
 				<div class="single-choose">
 					<i class="fa fa-globe"></i>
-					<h4>World Class Service</h4>
+					<h4>Dịch vụ đẳng cấp thế giới</h4>
 
 				</div>
 			</div><!-- END COL -->
 			<div class="col-sm-4 col-xs-12" data-aos="fade-up">
 				<div class="single-choose">
 					<i class="fa fa-thumbs-up"></i>
-					<h4>Best Price Guarantee</h4>
+					<h4>Giá tốt nhất</h4>
 
 				</div>
 			</div><!-- END COL -->
