@@ -66,6 +66,19 @@
     <definition name="admin-all-order" extends="base.admin">
         <put-attribute name="body" value="/WEB-INF/admin_1/all_order.jsp" />
     </definition>
+    <definition name="list-search" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/showSearchTour.jsp" />
+    </definition>
+    <definition name="admin-all-tour" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/all_tour.jsp" />
+    </definition>
+    <definition name="admin-all-user" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/all_user.jsp" />
+    </definition>
+
+    <definition name="admin-new-tour" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/new_tour.jsp" />
+    </definition>
 
 
 </tiles-definitions> 

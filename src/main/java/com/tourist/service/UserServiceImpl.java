@@ -1,7 +1,9 @@
 package com.tourist.service;
 
 import com.tourist.entity.EnumRole;
+import com.tourist.entity.Profile;
 import com.tourist.entity.User;
+import com.tourist.repository.ProfileRepository;
 import com.tourist.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -12,6 +14,9 @@ import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
+
+    @Autowired
+    private ProfileRepository profileRepository;
 
     @Autowired
     private UserRepository userRepository;
@@ -50,7 +55,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUserById(String id) {
         User user = userRepository.findById(id);
-        userRepository.delete(user);
+//        userRepository.delete(id);
+        try{
+            userRepository.delete(user);
+            System.out.println("ok");
+        }
+
+        catch (Exception e){
+            System.out.println(e.toString());
+        }
     }
 
     @Override

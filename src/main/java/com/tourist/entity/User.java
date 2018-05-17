@@ -1,6 +1,8 @@
 package com.tourist.entity;
 
 
+import org.hibernate.annotations.Cascade;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;
@@ -29,6 +31,10 @@ public class User implements Serializable {
 
     @OneToMany(mappedBy = "user")
     private List<OrderTour> ordertours;
+
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "id", nullable = false)
+    private Profile profile;
 
     public User() {
         super();
@@ -111,5 +117,13 @@ public class User implements Serializable {
 
     public void setOrdertours(List<OrderTour> ordertours) {
         this.ordertours = ordertours;
+    }
+
+    public Profile getProfile() {
+        return profile;
+    }
+
+    public void setProfile(Profile profile) {
+        this.profile = profile;
     }
 }

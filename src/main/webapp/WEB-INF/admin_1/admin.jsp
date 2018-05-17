@@ -4,5 +4,9 @@
 
 <section>
     ${hello}
-    <a href="${contextPath}/admin/all-order">All Order</a>
+    <br>
+    <a href="${contextPath}/admin/all-order"> All Order</a>
+        <a href="${contextPath}/admin/all-user"> All User</a>
+        <a href="${contextPath}/admin/all-order"> All Tour</a>
+        <a href="${contextPath}/admin/new-tour"> new tour</a>
 </section>

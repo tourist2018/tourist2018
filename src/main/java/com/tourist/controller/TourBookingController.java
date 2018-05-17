@@ -12,12 +12,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 @Controller
@@ -43,7 +45,7 @@ public class TourBookingController {
         String name = userNameAuthController.getUserName();
         User logined = userService.getByUsername(name);
 
-        int numberTour = tourService.getQuantityTour(EnumStatusBooking.WAITING,tourHasChoose);
+        int numberTour = tourService.getQuantityTour(EnumStatusBooking.DONE,tourHasChoose);
 
         modelAndView.addObject("oneTour", tourHasChoose);
         modelAndView.addObject("numberTour", numberTour);
@@ -81,5 +83,86 @@ public class TourBookingController {
         return "redirect:/list-tour";
     }
 
+    //search @RequestParam(value="dateStart", required=false) Date dateStart,
+    @RequestMapping(value = "/search-tour",method = RequestMethod.GET)
+    public ModelAndView searchTourBooking(@RequestParam(value="address", required=false) String address,
+                                    @RequestParam(value="dateStart", required=false) String dateStart,
+                                    @RequestParam(value="costTour", required=false) int costTour) {
+        List<Tour> listTourSearch = null;
+        ModelAndView modelAndView = new ModelAndView("list-search");
+
+        /*String d = dateStart;
+        java.sql.Date sql= null;*/
+
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date convertedCurrentDate = null;
+
+        try {
+            if (dateStart == ""){
+                convertedCurrentDate = null;
+            }else {
+                convertedCurrentDate = sdf.parse(dateStart);
+                /*sql = new java.sql.Date(convertedCurrentDate.getTime());
+                System.out.println(sql);*/
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        if (address =="" && dateStart == "" && costTour == 0){
+            System.out.println("null all");
+            return modelAndView;
+        }
+        else if (address =="" && dateStart == ""){
+            System.out.println("null cost");
+            listTourSearch = tourService.searchTourByCost(costTour);
+        }
+
+        else if (address =="" && costTour == 0){
+            try {
+
+                System.out.println();
+                System.out.println("value address");
+                System.out.println(convertedCurrentDate);
+                /*Tour t1 = tourService.getByDateStart(convertedCurrentDate);
+                System.out.println(t1.getDateStart());*/
+                List<Tour> listTestTour = tourService.searchTourByDate(convertedCurrentDate);
+                System.out.println("-----------");
+                System.out.println(listTestTour.get(0).getDateStart());
+                listTourSearch = tourService.searchTourByDate(convertedCurrentDate);
+            }
+            catch (Exception e){
+                System.out.println(e.toString());
+            }
+        }
+
+        else if (dateStart == "" && costTour == 0) {
+            try {
+
+                System.out.println("null address");
+                listTourSearch = tourService.searchTourByAddress(address);
+            }
+            catch (Exception e){
+                System.out.println(e.toString());
+            }
+        }
+        else if (address == ""){
+            listTourSearch = tourService.searchTourByDateAndCost(convertedCurrentDate,costTour);
+        }
+        else if (dateStart == "") {
+            listTourSearch = tourService.searchTourByAddressAndCost(address,costTour);
+        }
+        else if (costTour == 0){
+            listTourSearch = tourService.searchTourByAddressAndDate(address,convertedCurrentDate);
+        }
+        else if((address!="")&&(dateStart!="")&&(costTour!=0)){
+            listTourSearch = tourService.searchTourAll(address,convertedCurrentDate,costTour);
+        }
+
+        modelAndView.addObject("lists",listTourSearch);
+
+        return modelAndView;
+    }
 
 }

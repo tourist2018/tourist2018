@@ -49,7 +49,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/redirect").authenticated()
                 .antMatchers("/redirectToAnotherPage").hasRole(USER)
                 .antMatchers("/tour-booking").hasAnyAuthority(USER,ADMIN)
-                .antMatchers("/home").hasAnyAuthority(USER,ADMIN)
 //                .antMatchers("/home").hasAnyAuthority(USER,ADMIN)
                 .and()
                 .formLogin().loginPage("/login-tourist")
