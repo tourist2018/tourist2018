@@ -44,7 +44,7 @@
                             <button class="btn btn-default btn-home-bg" type="submit" style="border-radius: 45px">Find place</button>
 
                         </form:form>--%>
-                        <form action="${contextPath}/search-tour" method="GET">
+                        <form action="${contextPath}/search-tour" method="POST">
                             <div class="row form-search-tour">
                                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                     <input type="text" class="address_tour" name="address"  placeholder="Địa điểm"/>

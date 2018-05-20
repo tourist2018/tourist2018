@@ -10,6 +10,7 @@ public interface TourService {
     List<Tour> getAllTour();
     Tour getIdTour(String id);
     void newATour(Tour newTour);
+    void deleteATour(String idTour);
     Tour getByDateStart(Date date);
 
     int getQuantityTour(EnumStatusBooking quantity, Tour tourId);

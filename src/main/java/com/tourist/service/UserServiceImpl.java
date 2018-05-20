@@ -1,6 +1,7 @@
 package com.tourist.service;
 
 import com.tourist.entity.EnumRole;
+import com.tourist.entity.EnumSex;
 import com.tourist.entity.Profile;
 import com.tourist.entity.User;
 import com.tourist.repository.ProfileRepository;
@@ -11,6 +12,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -50,6 +52,26 @@ public class UserServiceImpl implements UserService {
         newUser.setRole(EnumRole.USER);
 
         userRepository.save(newUser);
+        Profile profile = new Profile();
+        profile.setId(newUser.getId());
+        profile.setFirstName(user.getUsername());
+        profile.setSex(EnumSex.FEMALE);
+
+        Random r = new Random();
+
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        String emailRandom = "";
+        for (int i = 0; i < 10; i++) {
+            System.out.println(alphabet.charAt(r.nextInt(alphabet.length())));
+            char b = alphabet.charAt(r.nextInt(alphabet.length()));
+            emailRandom +=b;
+        }
+        emailRandom +="@gmail.com";
+        System.out.println(emailRandom);
+        profile.setEmail(emailRandom);
+
+
+        profileRepository.save(profile);
     }
 
     @Override

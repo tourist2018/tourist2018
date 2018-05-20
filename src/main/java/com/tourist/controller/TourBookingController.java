@@ -84,7 +84,7 @@ public class TourBookingController {
     }
 
     //search @RequestParam(value="dateStart", required=false) Date dateStart,
-    @RequestMapping(value = "/search-tour",method = RequestMethod.GET)
+    @RequestMapping(value = "/search-tour",method = RequestMethod.POST)
     public ModelAndView searchTourBooking(@RequestParam(value="address", required=false) String address,
                                     @RequestParam(value="dateStart", required=false) String dateStart,
                                     @RequestParam(value="costTour", required=false) int costTour) {

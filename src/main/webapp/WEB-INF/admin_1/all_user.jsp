@@ -25,10 +25,10 @@
                 <c:forEach var="listValue" items="${lists}">
                     <tr>
                         <td>${listValue.username}</td>
-                        <%--<td>${listValue.profile.firstName} ${listValue.profile.lastName} </td>--%>
+                        <td>${listValue.profile.firstName} ${listValue.profile.lastName} </td>
                         <td>${listValue.role}</td>
-                        <%--<td>${listValue.profile.email}</td>--%>
-                        <%--<td>${listValue.profile.sex}</td>--%>
+                        <td>${listValue.profile.email}</td>
+                        <td>${listValue.profile.sex}</td>
                         <td>
                             <form action="${contextPath}/admin/delete-user"
                                        method="GET">

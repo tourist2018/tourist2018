@@ -54,7 +54,7 @@ public class AdminController {
     }
 
     @RequestMapping(value = "/admin/all-tour")
-    public ModelAndView adminAllTour(@RequestParam("id") Model model){
+    public ModelAndView adminAllTour(){
         ModelAndView modelAndView = new ModelAndView("admin-all-tour");
         List<Tour> listAllTour = tourService.getAllTour();
         modelAndView.addObject("lists",listAllTour);
@@ -63,8 +63,8 @@ public class AdminController {
     @RequestMapping(value = "/admin/new-tour")
     public ModelAndView adminCreateNewTour(Model model){
         ModelAndView modelAndView = new ModelAndView("admin-new-tour");
-        Tour formTour = new Tour();
-        model.addAttribute("formTour",formTour);
+//        Tour formTour = new Tour();
+//        model.addAttribute("formTour",formTour);
         return modelAndView;
     }
 }

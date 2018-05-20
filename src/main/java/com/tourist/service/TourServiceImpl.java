@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 
 @Service
@@ -32,8 +33,20 @@ public class TourServiceImpl implements TourService {
 
     @Override
     public void newATour(Tour newTour) {
-        Tour tour = new Tour();
+        Tour tour = newTour;
+        int random = ThreadLocalRandom.current().nextInt(1, 3 + 1);
+        System.out.println(random);
+        tour.setImage("img/blog/"+random+".jpg");
         tourRepository.save(tour);
+    }
+
+    @Override
+    public void deleteATour(String idTour) {
+        try{
+            tourRepository.delete(idTour);
+        }catch (Exception e){
+            System.out.println(e.toString());
+        }
     }
 
     @Override

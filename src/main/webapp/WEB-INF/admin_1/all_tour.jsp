@@ -35,7 +35,7 @@
                         <td>$${listValue.costTour}</td>
                         <td>${listValue.quantity}</td>
                         <td>
-                            <form accept-charset="utf-8" action="${contextPath}/admin/delete-user"
+                            <form accept-charset="utf-8" action="${contextPath}/admin/delete-tour"
                                   method="post" autocomplete="off">
                                 <input type="hidden" name="id" value="${listValue.id}"/>
                                 <input type="submit" class="btn btn-default" value="Xóa"/>
