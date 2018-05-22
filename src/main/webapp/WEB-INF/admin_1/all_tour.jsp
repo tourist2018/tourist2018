@@ -6,7 +6,6 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <section class="tour_details section-padding">
     <div class="container">
-        hello
     </div>
     <div class="container">
         <table id="example" class="table table-striped table-bordered"

@@ -65,6 +65,7 @@ public class OrderServiceImpl implements OrderService {
         OrderTour orderTourBooking = new OrderTour();
         orderTourBooking.setStatusBooking(EnumStatusBooking.WAITING);
         orderTourBooking.setNote("Đầy đủ");
+        orderTourBooking.setQuantily(orderTour.getQuantily());
         Date today = new Date(System.currentTimeMillis());
         orderTourBooking.setDateBooking(today);
         orderTourBooking.setUser(orderTour.getUser());

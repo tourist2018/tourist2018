@@ -6,7 +6,6 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <section class="tour_details section-padding">
     <div class="container">
-        hello
     </div>
     <div class="container">
         <table id="example" class="table table-striped table-bordered"
@@ -18,6 +17,7 @@
                 <th><h6>Date Go</h6></th>
                 <th><h6>Date end</h6></th>
                 <th><h6>Salary</h6></th>
+                <th><h6>Số khách</h6></th>
                 <th><h6>Note</h6></th>
                 <th></th>
             </tr>
@@ -31,6 +31,7 @@
                         <td>${listValue.tour.dateStart}</td>
                         <td>${listValue.tour.dateEnd}</td>
                         <td>$${listValue.tour.costTour}</td>
+                        <td>$${listValue.quantily}</td>
                         <td>${listValue.statusBooking}</td>
                         <td>
                             <form:form accept-charset="utf-8" modelAttribute="doneOrderForm" action="${contextPath}/admin/done-order"

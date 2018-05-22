@@ -6,7 +6,6 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <section class="tour_details section-padding">
     <div class="container">
-        hello
     </div>
     <div class="container">
         <form accept-charset="utf-8" action="${contextPath}/admin/create-tour" method="POST">

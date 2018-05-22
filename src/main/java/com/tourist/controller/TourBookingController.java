@@ -40,6 +40,7 @@ public class TourBookingController {
 
         System.out.println("--------------");
         List<OrderTour> lists = orderService.getAllOrder();
+        System.out.println(lists);
 
         UserNameAuthController userNameAuthController = new UserNameAuthController();
         String name = userNameAuthController.getUserName();
@@ -73,6 +74,12 @@ public class TourBookingController {
     public String getTourBooking(@Valid OrderTour form_booking) {
 
         orderService.createOrderTour(form_booking);
+        System.out.println(form_booking);
+
+        String idOrder = form_booking.getId();
+        System.out.println("ok");
+
+
         return "redirect:/list-tour";
     }
 
@@ -165,4 +172,14 @@ public class TourBookingController {
         return modelAndView;
     }
 
+    // dislike to like
+    public String clickButtonLike(){
+
+        return "";
+    }
+
+    //like to dislike
+    public String clickButtonDisLike(){
+        return "";
+    }
 }

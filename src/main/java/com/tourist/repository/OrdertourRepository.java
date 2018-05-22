@@ -24,6 +24,10 @@ public interface OrdertourRepository extends JpaRepository<OrderTour, String>{
     List<OrderTour> findOrderByUser_Id(String userId);
 //    List<OrderTour> findOrderByUser_IdAndStatusBookingIsNotLike(String userId, String status);
 
+    @Query(value = "SELECT u FROM OrderTour u WHERE u.tour =:tour AND u.statusBooking = :status")
+    List<OrderTour> findOrderTourByTour_Id(@Param("status") EnumStatusBooking status, @Param("tour") Tour tourId);
+
+
     @Query(value = "SELECT count(*) FROM OrderTour u WHERE u.tour =:tour AND u.statusBooking = :status")
     Double findByTour_Id(@Param("status") EnumStatusBooking status, @Param("tour") Tour tourId);
 

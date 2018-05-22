@@ -20,6 +20,15 @@
                 template="/WEB-INF/admin_1/template/template.jsp">
         <put-attribute name="body" value="" />
     </definition>
+
+
+    <!--error template-->
+    <definition name="base.error"
+                template="/WEB-INF/error/template_error.jsp">
+        <put-attribute name="header" value="/WEB-INF/template/layouts/_header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/template/layouts/_footer.jsp" />
+    </definition>
         
     <!-- Home Page -->
     <definition name="homePage" extends="base.definition">  
@@ -58,6 +67,12 @@
 	<definition name="list-tour" extends="base.definition">
 		<put-attribute name="body" value="/WEB-INF/views/listtour.jsp" />
 	</definition>
+    <definition name="denied" extends="base.error">
+        <put-attribute name="body" value="/WEB-INF/error/denied.jsp" />
+    </definition>
+    <definition name="404" extends="base.error">
+        <put-attribute name="body" value="/WEB-INF/error/404.jsp" />
+    </definition>
 
     <!--admin-->
     <definition name="dashboard" extends="base.admin">

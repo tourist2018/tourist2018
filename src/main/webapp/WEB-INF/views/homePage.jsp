@@ -79,7 +79,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center">
-                    <h2>Tour đặt biệt</h2>
+                    <h2>Tất cả các Tour</h2>
                     <span></span>
                     <!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p> -->
                 </div>

@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         isELIgnored="false" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+         isELIgnored="false" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <u:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <c:choose>
-    <c:when  test="${not empty oneTour }">
+    <c:when test="${not empty oneTour }">
         <!-- START TITLE TOP -->
         <section class="section-content section-padding"
                  style="background-image: url(img/bg/avata.jpg); background-size: cover; background-position: center center;">
@@ -25,7 +25,7 @@
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <div class="single_tour_details">
                             <img src="${oneTour.image}" class="img-responsive" alt="image"/>
-                            <h4><span><i class="material-icons">thumb_up</i> 77 Like </span></h4>
+                            <h4><span><i class="material-icons" id="color-like">thumb_up</i> 77 Like </span></h4>
                             <h2 class="title">${oneTour.title}</h2>
                             <p>${oneTour.content}</p>
                             <br>
@@ -43,7 +43,8 @@
                         <div class="book_now">
                             <h4>Tour Booking</h4>
                             <div class="row">
-                                <form:form action="${contextPath}/form-booking" method="post" modelAttribute="form_booking" >
+                                <form:form action="${contextPath}/form-booking" method="post"
+                                           modelAttribute="form_booking">
                                     <form:input path="tour" type="hidden" value="${oneTour.id}"/>
                                     <form:input path="user" type="hidden" value="${user_id}"/>
                                     <div class="form-group col-md-12">
@@ -68,13 +69,20 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="form-group col-md-12">
+                                        <p>Số người đăng ký:
+                                        </p>
+                                        <form:input path="quantily" type="number" class="form-control" value=""/>
+                                    </div>
                                     <div class="col-md-12">
                                         <div class="actions">
                                             <input type="submit" value="BOOKING NOW!" name="submit"
                                                    STYLE="width: 200px;"
                                                    id="submitButton" class="btn btn-lg btn-contact-bg"
                                                    title="Submit Your Message!"/>
-                                            <button class="btn btn-default"><a href="${contextPath}/list-tour">TOUR ĐÃ ĐẶT</a></button>
+                                            <button class="btn btn-default" id="tour-was-booking" style="width: 200px; height: 40px;">
+                                                <a href="${contextPath}/list-tour">TOUR ĐÃ
+                                                ĐẶT</a></button>
                                         </div>
                                     </div>
                                 </form:form>

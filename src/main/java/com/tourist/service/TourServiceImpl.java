@@ -1,6 +1,7 @@
 package com.tourist.service;
 
 import com.tourist.entity.EnumStatusBooking;
+import com.tourist.entity.OrderTour;
 import com.tourist.entity.Tour;
 import com.tourist.repository.OrdertourRepository;
 import com.tourist.repository.TourRepository;
@@ -58,6 +59,8 @@ public class TourServiceImpl implements TourService {
     public int getQuantityTour(EnumStatusBooking status, Tour tourId) {
         int quantityTour = tourId.getQuantity();
 
+        List<OrderTour> listOrderTour = ordertourRepository.findOrderTourByTour_Id(status,tourId);
+
         Double getATour = ordertourRepository.findByTour_Id(status, tourId);
         int getSumATour = getATour.intValue();
         if (getATour == 0){
@@ -67,7 +70,13 @@ public class TourServiceImpl implements TourService {
             return  0;
         }
         else {
-            return quantityTour - getSumATour;
+            int sumOrderTour = 0;
+            for ( OrderTour item:
+            listOrderTour) {
+                sumOrderTour += item.getQuantily();
+            }
+//            return quantityTour - getSumATour;
+            return quantityTour - sumOrderTour;
         }
     }
 

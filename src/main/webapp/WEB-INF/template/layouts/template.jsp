@@ -55,6 +55,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/quy.css">
 	<link rel="stylesheet" href="css/review.css">
+	<link rel="stylesheet" href="css/tour-booking.css">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>

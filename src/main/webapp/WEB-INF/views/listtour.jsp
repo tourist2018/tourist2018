@@ -13,6 +13,8 @@
 				<th><h6>Date Go</h6></th>
 				<th><h6>Date end</h6></th>
 				<th><h6>Salary</h6></th>
+                <th><h6>Số người</h6></th>
+                <th><h6>Tổng tiền</h6></th>
                 <th></th>
 			</tr>
 		</thead>
@@ -24,6 +26,8 @@
 				<td>${listValue.tour.dateStart}</td>
 				<td>${listValue.tour.dateEnd}</td>
 				<td>$${listValue.tour.costTour}</td>
+                <td>${listValue.quantily}</td>
+                <td>$${listValue.tour.costTour * listValue.quantily}</td>
                 <td>
                     <div class="list-tour-choose" style="display: inline-flex;">
                         <c:choose>
@@ -43,7 +47,13 @@
                         </c:choose>
                         <form:form action="${contextPath}/delete-booking" method="get" modelAttribute="delete_booking" >
                             <form:input path="id" type="hidden" value="${listValue.id}"/>
-                            <input type="submit" name="submit" class="btn btn-danger" value="Hủy"/>
+                            <c:choose>
+                            <c:when test="${listValue.statusBooking == 'DONE' }">
+                            </c:when>
+                                <c:otherwise>
+                                    <input type="submit" name="submit" class="btn btn-danger" value="Hủy"/>
+                                </c:otherwise>
+                            </c:choose>
                         </form:form>
                     </div>
                 </td>
