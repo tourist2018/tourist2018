@@ -1,73 +1,75 @@
 <!DOCTYPE tiles-definitions PUBLIC  
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
-       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
 
+        
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" 
+        template="/WEB-INF/template/layouts/template.jsp">  
+        <!-- <put-attribute name="title" value="" />  --> 
+        <put-attribute name="header" value="/WEB-INF/template/layouts/_header.jsp" />  
+        <!-- <put-attribute name="menu" value="/WEB-INF/template/layouts/_menu.jsp" />  --> 
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/template/layouts/_footer.jsp" />  
+    </definition>
 
-<tiles-definitions>
+    <!-- Base Admin -->
+    <definition name="base.admin"
+                template="/WEB-INF/template/layouts/adtemplate.jsp">
+        <put-attribute name="nav" value="/WEB-INF/template/layouts/adnavleft.jsp" />  
+        <put-attribute name="headeradmin" value="/WEB-INF/template/layouts/adheader.jsp" /> 
+        <put-attribute name="body" value="/WEB-INF/template/layouts/adbody.jsp"/> 
+        <put-attribute name="footeradmin" value="/WEB-INF/template/layouts/adfooter.jsp" />  
+          
+    </definition>
+        
+    <!-- Home Page -->
+    <definition name="homePage" extends="base.definition">  
+        <!-- <put-attribute name="title" value="Home Page" />   -->
+        <put-attribute name="body" value="/WEB-INF/views/homePage.jsp" />  
+    </definition>
+    <!-- Home Page -->
+    <definition name="index" extends="base.definition">
+        <!-- <put-attribute name="title" value="Home Page" />   -->
+        <put-attribute name="body" value="/WEB-INF/views/homePage.jsp" />
+    </definition>
 
-	<!-- Base Define -->
-	<definition name="base.definition"
-		template="/WEB-INF/template/layouts/template.jsp">
-		<!-- <put-attribute name="title" value="" /> -->
-		<put-attribute name="header"
-			value="/WEB-INF/template/layouts/_header.jsp" />
-		<!-- <put-attribute name="menu" value="/WEB-INF/template/layouts/_menu.jsp" 
-			/> -->
-		<put-attribute name="body" value="" />
-		<put-attribute name="footer"
-			value="/WEB-INF/template/layouts/_footer.jsp" />
-	</definition>
+    <!-- Review Page  -->
+    <definition name="review" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/views/review.jsp" />  
+    </definition>  
 
-	<!-- Home Page -->
-	<definition name="homePage" extends="base.definition">
-		<!-- <put-attribute name="title" value="Home Page" /> -->
-		<put-attribute name="body"
-			value="/WEB-INF/views/homePage.jsp" />
-	</definition>
-	<!-- Home Page -->
-	<definition name="index" extends="base.definition">
-		<!-- <put-attribute name="title" value="Home Page" /> -->
-		<put-attribute name="body"
-			value="/WEB-INF/views/homePage.jsp" />
-	</definition>
+    <definition name="register" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/register.jsp" />
+    </definition>
 
-	<!-- Review Page -->
-	<definition name="review" extends="base.definition">
-		<put-attribute name="body"
-			value="/WEB-INF/views/review.jsp" />
-	</definition>
+    <definition name="login-tourist" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+    </definition>
 
-	<definition name="login-and-register"
-		extends="base.definition">
-		<put-attribute name="body"
-			value="/WEB-INF/views/login.jsp" />
-	</definition>
-
-	<definition name="login-tourist" extends="base.definition">
-		<put-attribute name="body"
-			value="/WEB-INF/views/login-test.jsp" />
-	</definition>
-
-	<definition name="infoUser" extends="base.definition">
-		<put-attribute name="body"
-			value="/WEB-INF/views/infoUser.jsp" />
-	</definition>
+    <definition name="infoUser" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/views/infoUser.jsp" />  
+    </definition>
 
 	<!-- Tour Booking -->
 	<definition name="tourbooking" extends="base.definition">
-		<put-attribute name="body"
-			value="/WEB-INF/views/tourbooking.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tourbooking.jsp" />
 	</definition>
 
 	<!-- List Tour -->
 	<definition name="list-tour" extends="base.definition">
-		<put-attribute name="body"
-			value="/WEB-INF/views/listtour.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/listtour.jsp" />
 	</definition>
-	
-	<!-- page admin -->
-	<definition name="definitionAdmin"
-		template="/WEB-INF/views/pageAdmin.jsp" />
+
+    <!--admin-->
+    <definition name="dashboard" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/admin.jsp" />
+    </definition>
+    <definition name="admin-all-order" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/all_order.jsp" />
+    </definition>
 
 
 </tiles-definitions> 

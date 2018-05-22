@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          isELIgnored="false" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <u:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <c:choose>
     <c:when  test="${not empty oneTour }">
@@ -40,9 +41,11 @@
                     <!--- END COL -->
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="book_now">
-                            <h4>Tour Booking</h4>
+                            <h4>Đặt Tour</h4>
                             <div class="row">
-                                <form action="#" method="post">
+                                <form:form action="${contextPath}/form-booking" method="post" modelAttribute="form_booking" >
+                                    <form:input path="tour" type="hidden" value="${oneTour.id}"/>
+                                    <form:input path="user" type="hidden" value="${user_id}"/>
                                     <div class="form-group col-md-12">
                                         <h4>Tên tour:</h4>
                                     </div>
@@ -61,20 +64,20 @@
                                                 <p>Giá tiền: <strong>$${oneTour.costTour}</strong></p>
                                             </div>
                                             <div class="col-6">
-                                                <p>Số lượng: <strong>$${oneTour.quantity}</strong></p>
+                                                <p>Số lượng: <strong>${numberTour}</strong></p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="actions">
-                                            <input type="button" value="BOOKING NOW!" name="submit"
+                                            <input type="submit" value="BOOKING NOW!" name="submit"
                                                    STYLE="width: 200px;"
                                                    id="submitButton" class="btn btn-lg btn-contact-bg"
                                                    title="Submit Your Message!"/>
                                             <button class="btn btn-default"><a href="${contextPath}/list-tour">TOUR ĐÃ ĐẶT</a></button>
                                         </div>
                                     </div>
-                                </form>
+                                </form:form>
                             </div>
                         </div>
                         <div class="tag">
@@ -102,11 +105,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center">
-                    <h2>Deals &amp; discount</h2>
+                    <h2>Giao dịch &amp; Giảm giá</h2>
                     <span></span>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        aliquyam erat.</p>
+                    <p>Với rất nhiều tour giảm giá và giao dịch nhanh chóng, hãy đến với Top tour and travel của chúng tôi để trải nghiệm những tiện ích và hài lòng .</p>
                 </div>
             </div>
             <!-- END COL -->
@@ -129,9 +130,8 @@
                             </div>
                         </div>
                         <div class="single_discount_dsc">
-                            <h3>Black sea</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                            <h3>Bán đảo Sơn Trà</h3>
+                            <p>Hãy đến với bán đảo sơn trà tận hưởng cảnh đẹp hữu tình khi biển và núi hòa quyện với nhau , trãi nghiệm không khí trong lành của thiên nhiên và phong cảnh tuyệt đẹp.</p>
                             <a href="tour-details.html" target="_blank">View details</a>
                         </div>
                     </div>
@@ -150,9 +150,8 @@
                             </div>
                         </div>
                         <div class="single_discount_dsc">
-                            <h3>Gallipoli</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                            <h3>Bà Nà Hill</h3>
+                            <p>Phong cảnh mang kiến trúc và văn hóa của phương tây tuyệt đẹp , bạn mất 20 phút để đi cáp treo để leo lên đỉnh núi nơi mà cảnh đẹp và rất nhiều trò chơi , rượu ... của Bà Nà hill , Bà Nà hill đường lên tiên cảnh </p>
                             <a href="tour-details.html" target="_blank">View details</a>
                         </div>
                     </div>
@@ -171,9 +170,8 @@
                             </div>
                         </div>
                         <div class="single_discount_dsc">
-                            <h3>Pamukkale</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                            <h3>Phố Cổ Hội An</h3>
+                            <p>Với kiến trúc cổ xưa , nới mà du khách như được quay về với thế kỉ 20 với kiến trúc và những món ăn dân dã , tối lại thật lung linh khi bạn đi thuyền giữa sông và thả hoa đăng cùng ngắm nhìn hội an cổ kính với rất nhiều đèn lồng . Thật sự Hội AN là nơi bạn không nên bỏ lỡ .</p>
                             <a href="tour-details.html" target="_blank">View details</a>
                         </div>
                     </div>
@@ -192,9 +190,8 @@
                             </div>
                         </div>
                         <div class="single_discount_dsc">
-                            <h3>Ephesus</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                            <h3>Vườn Hoa tình yêu</h3>
+                            <p>Nằm ở Hội An . Bạn tha hồ ngắm nhìn và chụp ảnh với vô vàng những loại hoa , ở đây có rất nhiều hoa đẹp như phi líp , hồng .... , là nơi bạn nên ghé thăm khi đến Hội an.</p>
                             <a href="tour-details.html" target="_blank">View details</a>
                         </div>
                     </div>
@@ -213,9 +210,8 @@
                             </div>
                         </div>
                         <div class="single_discount_dsc">
-                            <h3>Cappadocia</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                            <h3>Cầu tình yêu</h3>
+                            <p>Nằm ở bên cạnh cầu rồng , Nơi mà các bạn có thể ngắm nhìn đà nẵng thơ mộng thế nào bên bờ sông , ở đây thường có các cặp đôi trao nhau những kỉ niệm bằng cách khóa các móc khóa trên cầu ....</p>
                             <a href="tour-details.html" target="_blank">View details</a>
                         </div>
                     </div>
@@ -234,9 +230,8 @@
                             </div>
                         </div>
                         <div class="single_discount_dsc">
-                            <h3>Istanbul</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                            <h3>Lặng Ngắm San Hô</h3>
+                            <p>Vào các dịp nắng nóng ở đây lại đón hàng ngàn du khách đến lặn ngắm nhìn san hô và cá , một trải nghiệm tuyệt vời khi bạn tới Đà Nẵng.</p>
                             <a href="tour-details.html" target="_blank">View details</a>
                         </div>
                     </div>

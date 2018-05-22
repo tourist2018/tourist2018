@@ -9,7 +9,7 @@ import java.util.UUID;
 @Table(name = "tourorder")
 public class OrderTour implements Serializable {
 
-    private static final long serialVersionUID = 2108252666897710190L;
+    private static final long serialVersionUID = -8642601765942623915L;
 
     @Id
     @Column(name = "order_id")
@@ -19,7 +19,8 @@ public class OrderTour implements Serializable {
     @Column(name = "note")
     private String note;
     @Column(name = "status")
-    private String statusBooking;
+    @Enumerated(EnumType.STRING)
+    private EnumStatusBooking statusBooking;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
@@ -32,7 +33,7 @@ public class OrderTour implements Serializable {
     public OrderTour(){
         super();
     }
-    public OrderTour(String id, Date date, String note, String status, User user, Tour tour){
+    public OrderTour(String id, Date date, String note, EnumStatusBooking status, User user, Tour tour){
         this.setId(id);// ko can set vi String id = UUID.randomUUID().toString(); , khi tao object se tu sinh ra uuid
         this.setDateBooking(date);
         this.setNote(note);
@@ -66,11 +67,11 @@ public class OrderTour implements Serializable {
         this.note = note;
     }
 
-    public String getStatusBooking() {
+    public EnumStatusBooking getStatusBooking() {
         return statusBooking;
     }
 
-    public void setStatusBooking(String statusBooking) {
+    public void setStatusBooking(EnumStatusBooking statusBooking) {
         this.statusBooking = statusBooking;
     }
 

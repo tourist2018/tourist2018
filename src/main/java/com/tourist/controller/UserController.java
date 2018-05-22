@@ -24,7 +24,7 @@ public class UserController {
 	@RequestMapping("/info-user")
     public ModelAndView next(Model model) {
 		ModelAndView modelAndView = new ModelAndView("infoUser");
-        
+
         try {
         	List<User> users = userService.getAllUser();
         	System.out.println("USER: "+users.size());

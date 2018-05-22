@@ -9,7 +9,6 @@ import org.springframework.security.core.userdetails.User;
 public class UserNameAuthController {
     public UserNameAuthController(){
 
-
     }
     public String getUserName(){
         User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
