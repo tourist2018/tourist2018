@@ -28,9 +28,11 @@ public class Tour implements Serializable {
     private String image;
 
     @Column(name = "date_start")
+    @Temporal(TemporalType.DATE)
     private Date dateStart;
 
     @Column(name = "date_end")
+    @Temporal(TemporalType.DATE)
     private Date dateEnd;
 
     @Column(name = "cost")

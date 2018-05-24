@@ -1,16 +1,8 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Ngoc Quy
-  Date: 4/27/2018
-  Time: 2:31 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         isELIgnored="false" pageEncoding="UTF-8"%>
 
-</body>
-</html>
+<div class="container" style="margin-top: 200px; text-align: center;">
+    <h2>Bạn nhập đường dẫn không đúng!</h2>
+    <h4>Vui lòng click đúng đường dẫn.</h4>
+</div>
+

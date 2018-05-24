@@ -2,6 +2,7 @@ package com.tourist.service;
 
 import java.util.List;
 
+import com.tourist.entity.Profile;
 import com.tourist.entity.User;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -14,6 +15,7 @@ public interface UserService {
 	void  createNewUser(User user);
 	void deleteUserById(String id);
 	Boolean checkPassword(String username, String password);
+
 
 	
 }

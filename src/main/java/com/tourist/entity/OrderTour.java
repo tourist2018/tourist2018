@@ -18,6 +18,10 @@ public class OrderTour implements Serializable {
     private Date dateBooking;
     @Column(name = "note")
     private String note;
+
+    @Column(name = "quantily")
+    private int quantily;
+
     @Column(name = "status")
     @Enumerated(EnumType.STRING)
     private EnumStatusBooking statusBooking;
@@ -89,5 +93,14 @@ public class OrderTour implements Serializable {
 
     public void setTour(Tour tour) {
         this.tour = tour;
+    }
+
+
+    public int getQuantily() {
+        return quantily;
+    }
+
+    public void setQuantily(int quantily) {
+        this.quantily = quantily;
     }
 }

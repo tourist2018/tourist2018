@@ -12,6 +12,7 @@
 
 <title>Page Admin</title>
 
+
 <!-- Bootstrap -->
 <link href="../gentelella/vendors/bootstrap/dist/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -99,6 +100,7 @@
 
 	<!-- Custom Theme Scripts -->
 	<script src="../gentelella/build/js/custom.min.js"></script>
+	
 
 </body>
 </html>

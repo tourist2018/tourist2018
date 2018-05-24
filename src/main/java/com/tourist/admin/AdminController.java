@@ -6,6 +6,7 @@ import com.tourist.entity.Tour;
 import com.tourist.entity.User;
 import com.tourist.service.OrderService;
 import com.tourist.service.QuantityTourService;
+import com.tourist.service.TourService;
 import com.tourist.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,6 +23,8 @@ import java.util.List;
 @Controller
 public class AdminController {
 
+    @Autowired
+    private TourService tourService;
 
     @Autowired
     private UserService userService;
@@ -50,18 +53,18 @@ public class AdminController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "/admin/all-user")
-    public ModelAndView adminAllUser(@RequestParam("id") String id){
-        ModelAndView modelAndView = new ModelAndView("admin-all-user");
-        List<User> listAllUser = userService.getAllUser();
-        modelAndView.addObject("lists",listAllUser);
+    @RequestMapping(value = "/admin/all-tour")
+    public ModelAndView adminAllTour(){
+        ModelAndView modelAndView = new ModelAndView("admin-all-tour");
+        List<Tour> listAllTour = tourService.getAllTour();
+        modelAndView.addObject("lists",listAllTour);
         return modelAndView;
     }
     @RequestMapping(value = "/admin/new-tour")
     public ModelAndView adminCreateNewTour(Model model){
         ModelAndView modelAndView = new ModelAndView("admin-new-tour");
-        Tour formTour = new Tour();
-        model.addAttribute("formTour",formTour);
+//        Tour formTour = new Tour();
+//        model.addAttribute("formTour",formTour);
         return modelAndView;
     }
 }

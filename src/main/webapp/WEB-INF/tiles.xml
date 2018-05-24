@@ -20,9 +20,18 @@
                 template="/WEB-INF/template/layouts/adtemplate.jsp">
         <put-attribute name="nav" value="/WEB-INF/template/layouts/adnavleft.jsp" />  
         <put-attribute name="headeradmin" value="/WEB-INF/template/layouts/adheader.jsp" /> 
-        <put-attribute name="body" value="/WEB-INF/template/layouts/adbody.jsp"/> 
+        <put-attribute name="body" value=""/> 
         <put-attribute name="footeradmin" value="/WEB-INF/template/layouts/adfooter.jsp" />  
           
+    </definition>
+
+
+    <!--error template-->
+    <definition name="base.error"
+                template="/WEB-INF/error/template_error.jsp">
+        <put-attribute name="header" value="/WEB-INF/template/layouts/_header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/template/layouts/_footer.jsp" />
     </definition>
         
     <!-- Home Page -->
@@ -62,6 +71,12 @@
 	<definition name="list-tour" extends="base.definition">
 		<put-attribute name="body" value="/WEB-INF/views/listtour.jsp" />
 	</definition>
+    <definition name="denied" extends="base.error">
+        <put-attribute name="body" value="/WEB-INF/error/denied.jsp" />
+    </definition>
+    <definition name="404" extends="base.error">
+        <put-attribute name="body" value="/WEB-INF/error/404.jsp" />
+    </definition>
 
     <!--admin-->
     <definition name="dashboard" extends="base.admin">
@@ -69,6 +84,19 @@
     </definition>
     <definition name="admin-all-order" extends="base.admin">
         <put-attribute name="body" value="/WEB-INF/admin_1/all_order.jsp" />
+    </definition>
+    <definition name="list-search" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/showSearchTour.jsp" />
+    </definition>
+    <definition name="admin-all-tour" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/all_tour.jsp" />
+    </definition>
+    <definition name="admin-all-user" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/all_user.jsp" />
+    </definition>
+
+    <definition name="admin-new-tour" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/new_tour.jsp" />
     </definition>
 
 
