@@ -1,13 +1,7 @@
 package com.tourist.controller;
 
-import com.tourist.entity.EnumStatusBooking;
-import com.tourist.entity.OrderTour;
-import com.tourist.entity.Tour;
-import com.tourist.entity.User;
-import com.tourist.service.OrderService;
-import com.tourist.service.QuantityTourService;
-import com.tourist.service.TourService;
-import com.tourist.service.UserService;
+import com.tourist.entity.*;
+import com.tourist.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
@@ -16,6 +10,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.Date;
 import java.text.ParseException;
@@ -33,6 +28,9 @@ public class TourBookingController {
     @Autowired
     private OrderService orderService;
 
+    @Autowired
+    private CommentService commentService;
+
     @RequestMapping(value = "/tour-booking", method = RequestMethod.GET)
     public ModelAndView getTourBooking(@RequestParam("id") String id, Model model) {
         ModelAndView modelAndView = new ModelAndView("tourbooking");
@@ -48,10 +46,14 @@ public class TourBookingController {
 
         int numberTour = tourService.getQuantityTour(EnumStatusBooking.DONE,tourHasChoose);
 
+        List<CommentEntity> comments = commentService.getAllCommentByIdPost(id);
+
         modelAndView.addObject("oneTour", tourHasChoose);
         modelAndView.addObject("numberTour", numberTour);
         model.addAttribute("form_booking", new OrderTour());
         model.addAttribute("user_id", logined.getId());
+        model.addAttribute("listCmt",comments);
+
         return modelAndView;
     }
     String username = null;
@@ -172,7 +174,38 @@ public class TourBookingController {
         return modelAndView;
     }
 
+
+    @RequestMapping(value="/comments-post", method = RequestMethod.POST)
+    @ResponseBody
+    public String Comments(HttpServletRequest req) {
+        String idTour = req.getParameter("id_post");
+        String idUser = req.getParameter("id_user");
+        String content = req.getParameter("noidung");
+
+        User userComment = userService.getById(idUser);
+
+        CommentEntity commentEntity = new CommentEntity(idUser,idTour,content);
+        commentService.saveComment(commentEntity);
+        System.out.println(commentEntity);
+
+        return  "<div class='col-lg-10'>"
+                + "<div class='panel panel-white post panel-shadow'>"
+                + "<div class='post-heading'>"
+                + "<div class='pull-left meta'>"
+                + "<div class='title h5'>" + "<b>"
+                + userComment.getUsername() + "</b>"
+                + "</div>"
+                + "</div>"
+                + "</div>"
+                + "<br>"
+                + "<div class='post-description'>"+ "<p> "
+                + content
+                + "</p>"
+                + "</div>"+ "</div>"+ "</div>";
+    }
+
     // dislike to like
+    @RequestMapping(value = "/like/{id}",  method = RequestMethod.POST)
     public String clickButtonLike(){
 
         return "";

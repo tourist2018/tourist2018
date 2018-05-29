@@ -26,6 +26,8 @@
                         <div class="single_tour_details">
                             <img src="${oneTour.image}" class="img-responsive" alt="image"/>
                             <h4><span><i class="material-icons" id="color-like">thumb_up</i> 77 Like </span></h4>
+                            <input hidden="hidden" class="id_user" id="${pageContext.request.userPrincipal.name}" value="${pageContext.request.userPrincipal.name}"/>
+                            <input hidden="hidden" class="id_tour" id="id_tour${oneTour.id}" value="${user_id}"/>
                             <h2 class="title">${oneTour.title}</h2>
                             <p>${oneTour.content}</p>
                             <br>
@@ -107,6 +109,59 @@
         <!-- END BLOG -->
     </c:when>
 </c:choose>
+
+
+<!-- START COMMENT -->
+<section id="deals_discount" class="deals_discount section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h2>Comments</h2>
+                    <span></span>
+                    <div class="col-lg-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <c:forEach items="${listCmt}" var="cmt">
+                                    <div class="col-lg-10">
+                                        <div class="panel panel-white post panel-shadow">
+                                            <div class="post-heading">
+                                                <div class="pull-left meta">
+                                                    <div class="title h5">
+                                                        <b>${cmt.getUser().getUsername()}</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="post-description">
+                                                <p>${cmt.content}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </c:forEach>
+                                <div id="post_cmt"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-10">
+                            <%-- <form action="/comments-post" method="post"> --%>
+                            <textarea style="width: 100%; height: 50px" id="noidung"></textarea>
+                            <br>
+                            <%-- <input name="tourid" type="hidden" value="${oneTour.id}" />
+                            <input name="userid" type="hidden" value="${user_id}" /> --%>
+                            <button style="float: right;" class="btn btn-success" id="comment">Bình luận</button>
+                            <%-- </form> --%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END COL -->
+        </div>
+        <!-- END ROW -->
+    </div>
+</section>
+
+
 <!-- START DEALS & DISCOUNT -->
 <section id="deals_discount" class="deals_discount section-padding">
     <div class="container">
@@ -253,4 +308,71 @@
 </section>
 <!-- END DEALS & DISCOUNT -->
 
+<style>
+    .panel.panel-white.post.panel-shadow {
+        border-bottom: solid 0.25px;
+        margin-bottom: 10px;
+        float: left;
+        width: 100%;
+    }
 
+    .title.h5 {
+        font-size:  20px;
+        position:  absolute;
+        left:  30px;
+        top: 30px;
+    }
+    .post-description {
+        float: right;
+        width: 70%;
+        border-left: solid 0.25px;
+    }
+</style>
+
+
+<script src="js/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        var id_post = ${oneTour.id};
+        var id_user = "${user_id}";
+        $("#comment").click(function(){
+            /*  alert("Hello! I am an alert box!"); */
+            var noidung = $("#noidung").val();
+            var url = "/comments-post";
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url:url,
+                type:"post",
+                data: {'noidung':noidung,'id_post':id_post,'id_user':id_user},
+                async:true,
+                success:function(data){
+                    $("#post_cmt").after(data);
+                }
+            })
+            document.getElementById("noidung").value="";
+        });
+        /*  $("#like").click(function(){
+
+         var url = "/like";
+         alert(id_post);alert(id_user);
+         $.ajax({
+         headers: {
+         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+         },
+         url:url,
+         type:"post",
+         data: {'id_post':id_post,'id_user':id_user},
+         async:true,
+         success:function(data){
+         alert("Hello! I am an alert box!");
+
+         }
+         })
+
+         }); */
+    });
+
+</script>

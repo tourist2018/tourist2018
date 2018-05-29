@@ -36,6 +36,10 @@ public class User implements Serializable {
     @JoinColumn(name = "id", nullable = false)
     private Profile profile;
 
+    @OneToMany(mappedBy="user")
+    private List<CommentEntity> commentEntity;
+
+
     public User() {
         super();
     }
@@ -125,5 +129,13 @@ public class User implements Serializable {
 
     public void setProfile(Profile profile) {
         this.profile = profile;
+    }
+
+    public List<CommentEntity> getCommentEntity() {
+        return commentEntity;
+    }
+
+    public void setCommentEntity(List<CommentEntity> commentEntity) {
+        this.commentEntity = commentEntity;
     }
 }

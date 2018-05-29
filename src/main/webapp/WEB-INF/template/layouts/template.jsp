@@ -120,5 +120,37 @@
 
 	<script src="js/list_tour.js"></script>
 
+
+	<script type="text/javascript">
+        $("i#color-like").click(function () {
+            var id_user = $("input.id_user").val();
+            var id_tour = $("input.id_tour").val();
+//            var id_tour = user_id;
+            console.log(id_user);
+            console.log(id_tour);
+			$.ajax({
+			 type: "POST",
+			 url: '/like' + '/' + id_tour,
+			 data: {
+			 headers: {
+			 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			 },
+			 "id_user": id_user,
+			 '_method': 'POST',
+			 _token: '{{csrf_token()}}',
+			 },
+			 success: function (msg) {
+			 alert("like " + msg.status);
+			 /*var fade = "employee-id-" + msg.id;
+			 $('ul.contextMenu[data-employee-id="' + msg.id + '"').hide()
+			 var fadeElement = $('#' + fade);
+			 console.log(fade);
+			 fadeElement.fadeOut("fast");*/
+			 }
+			 });
+
+        });
+	</script>
+
 </body>
 </html>

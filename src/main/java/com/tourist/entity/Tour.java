@@ -47,8 +47,11 @@ public class Tour implements Serializable {
     @OneToMany(mappedBy = "tour")
     private List<OrderTour> ordertours;
 
-    public Tour() {
+    @OneToMany(mappedBy = "tour")
+    private List<CommentEntity> commentEntity;
 
+    public Tour() {
+        super();
     }
 
     public Tour(String id) {
@@ -157,5 +160,13 @@ public class Tour implements Serializable {
 
     public void setOrdertours(List<OrderTour> ordertours) {
         this.ordertours = ordertours;
+    }
+
+    public List<CommentEntity> getCommentEntity() {
+        return commentEntity;
+    }
+
+    public void setCommentEntity(List<CommentEntity> commentEntity) {
+        this.commentEntity = commentEntity;
     }
 }
