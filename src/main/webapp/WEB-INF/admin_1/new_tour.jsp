@@ -4,11 +4,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
-<section class="tour_details section-padding">
-    <div class="container">
-    </div>
-    <div class="container">
-        <form accept-charset="utf-8" action="${contextPath}/admin/create-tour" method="POST">
+<section class="tour_details section-padding"">
+    <div class="container" style="width: 82%;height : 700px; margin-left:18% ; background: azure;">
+        <form  style="margin-left:28% ; margin-top:10%;" accept-charset="utf-8" action="${contextPath}/admin/create-tour" method="POST" >
             <div class="form-group">
                 <label>Địa điểm</label>
                 <input type="text" name="address"value=""/>

@@ -9,16 +9,16 @@
     </div>
     <div class="container">
         <table id="example" class="table table-striped table-bordered"
-               style="width: 100%;">
+               style="width: 82%;; margin-left:18%">
             <thead>
             <tr style="color: #f9461d">
-                <th><h6>Địa điểm</h6></th>
-                <th><h6>Giới thiệu</h6></th>
-                <th><h6>Đoạn văn giới thiệu</h6></th>
-                <th><h6>Ngày bắt đầu</h6></th>
-                <th><h6>Ngày kết thúc</h6></th>
-                <th><h6>Giá</h6></th>
-                <th><h6>Số lượng</h6></th>
+                <th><h4>Địa điểm</h4></th>
+                <th><h4>Giới thiệu</h4></th>
+                <th><h4>Đoạn văn giới thiệu</h4></th>
+                <th><h4>Ngày bắt đầu</h4></th>
+                <th><h4>Ngày kết thúc</h4></th>
+                <th><h4>Giá</h4></th>
+                <th><h4>Số lượng</h4></th>
                 <th></th>
             </tr>
             </thead>
@@ -37,7 +37,7 @@
                             <form accept-charset="utf-8" action="${contextPath}/admin/delete-tour"
                                   method="post" autocomplete="off">
                                 <input type="hidden" name="id" value="${listValue.id}"/>
-                                <input type="submit" class="btn btn-default" value="Xóa"/>
+                                <input  type="submit" class="btn btn-warning" value="Xóa"/>
                             </form>
                         </td>
                     </tr>

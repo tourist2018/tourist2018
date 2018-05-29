@@ -64,7 +64,7 @@
       <![endif]-->
 </head>
 
-<body data-spy="scroll" data-offset="80">
+<body >
 
 	<tiles:insertAttribute name="header" />
 

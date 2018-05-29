@@ -1,12 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         isELIgnored="false" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-<section>
-    ${hello}
-    <br>
-    <a href="${contextPath}/admin/all-order"> All Order</a>
-        <a href="${contextPath}/admin/all-user"> All User</a>
-        <a href="${contextPath}/admin/all-tour"> All Tour</a>
-        <a href="${contextPath}/admin/new-tour"> new tour</a>
-</section>
+<div style=" with : 80% ; height : 700px; margin-left: 18% ;padding-top:200px; padding-left:200px; background: azure;">
+	
+	<h1 >
+		<strong style="color: black;">Chào mừng đến với trang Admin</a></strong>
+	</h1>
+	
+</div>

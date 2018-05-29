@@ -17,8 +17,12 @@
 
     <!-- Base Admin -->
     <definition name="base.admin"
-                template="/WEB-INF/admin_1/template/template.jsp">
-        <put-attribute name="body" value="" />
+                template="/WEB-INF/template/layouts/adtemplate.jsp">
+        <put-attribute name="nav" value="/WEB-INF/template/layouts/adnavleft.jsp" />  
+        <put-attribute name="headeradmin" value="/WEB-INF/template/layouts/adheader.jsp" /> 
+        <put-attribute name="body" value=""/> 
+        <put-attribute name="footeradmin" value="/WEB-INF/template/layouts/adfooter.jsp" />  
+          
     </definition>
 
 

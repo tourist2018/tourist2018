@@ -9,16 +9,17 @@
     </div>
     <div class="container">
         <table id="example" class="table table-striped table-bordered"
-               style="width: 100%;">
+               style="width: 82%;; margin-left:18%; margin-top: -1px;">
             <thead>
             <tr style="color: #f9461d">
-                <th><h6>Performer</h6></th>
-                <th><h6>Name Tour</h6></th>
-                <th><h6>Date Go</h6></th>
-                <th><h6>Date end</h6></th>
-                <th><h6>Salary</h6></th>
-                <th><h6>Số khách</h6></th>
-                <th><h6>Note</h6></th>
+=
+                <th><h4>Người đặt tour</h6></th>
+                <th><h4>Tên tour</h4></th>
+                <th><h4>Ngày đi</h4></th>
+                <th><h4>Ngày về</h4></th>
+                <th><h4>Giá tiền</h4></th>
+                <th><h4>Số Lượng</h4></th>
+                <th><h4>Tình trạng</h4></th>
                 <th></th>
             </tr>
             </thead>
@@ -29,7 +30,7 @@
                         <td>${listValue.user.username}</td>
                         <td>${listValue.tour.title}</td>
                         <td>${listValue.tour.dateStart}</td>
-                        <td>${listValue.tour.dateEnd}</td>
+                       <td>${listValue.tour.dateEnd}</td>
                         <td>$${listValue.tour.costTour}</td>
                         <td>$${listValue.quantily}</td>
                         <td>${listValue.statusBooking}</td>
@@ -37,12 +38,12 @@
                             <form:form accept-charset="utf-8" modelAttribute="doneOrderForm" action="${contextPath}/admin/done-order"
                                                method="post" autocomplete="off">
                                 <form:input type="hidden" name="id" path="id" value="${listValue.id}"/>
-                                <input type="submit" class="btn btn-default" value="Duyệt"/>
+                                <input type="submit" class="btn btn-primary" value="Duyệt"/>
                             </form:form>
                             <form:form accept-charset="utf-8" modelAttribute="cancelOrderForm" action="${contextPath}/admin/cancel-order"
                                        method="post" autocomplete="off">
                                 <form:input type="hidden" name="id" path="id" value="${listValue.id}"/>
-                                <input type="submit" class="btn btn-default" value="Hủy"/>
+                                <input type="submit" class="btn btn-warning" value="Hủy"/>
                             </form:form>
                         </td>
                     </tr>

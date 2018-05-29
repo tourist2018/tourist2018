@@ -9,14 +9,14 @@
     </div>
     <div class="container">
         <table id="example" class="table table-striped table-bordered"
-               style="width: 100%;">
+              style="width: 82%; margin-left:18%; margin-top: 19px;">
             <thead>
             <tr style="color: #f9461d">
-                <th><h6>Tên đăng nhập</h6></th>
-                <th><h6>Họ và tên</h6></th>
-                <th><h6>Quyền đăng nhập</h6></th>
-                <th><h6>Email</h6></th>
-                <th><h6>Giới tính</h6></th>
+                <th><h4>Tên đăng nhập</h4></th>
+                <th><h4>Họ và tên</h4></th>
+                <th><h4>Quyền đăng nhập</h4></th>
+                <th><h4>Email</h4></th>
+                <th><h4>Giới tính</h4></th>
                 <th></th>
             </tr>
             </thead>
@@ -33,7 +33,7 @@
                             <form action="${contextPath}/admin/delete-user"
                                        method="GET">
                                 <input type="hidden" name="id" value="${listValue.id}"/>
-                                <input type="submit" class="btn btn-default" value="Xóa"/>
+                                <input type="submit" class="btn btn-warning" value="Xóa"/>
                             </form>
                         </td>
                     </tr>
