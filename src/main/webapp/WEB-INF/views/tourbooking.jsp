@@ -17,7 +17,6 @@
             </div>
         </section>
         <!-- END TITLE TOP -->
-
         <!-- START BLOG -->
         <section class="tour_details section-padding">
             <div class="container">
@@ -46,7 +45,7 @@
                             <h4>Đặt Tour</h4>
                             <div class="row">
                                 <form:form action="${contextPath}/form-booking" method="post"
-                                           modelAttribute="form_booking">
+                                           modelAttribute="form_booking" onSubmit="return validate()">
                                     <form:input path="tour" type="hidden" value="${oneTour.id}"/>
                                     <form:input path="user" type="hidden" value="${user_id}"/>
                                     <div class="form-group col-md-12">
@@ -71,11 +70,14 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <label style="color: red; margin-left: 130px;" id="error_project"></label>
                                     <div class="form-group col-md-12">
                                         <p>Số người đăng ký:
                                         </p>
+                                        <span hidden="hidden" id="valueNumber" value="${numberTour}"></span>
                                         <form:input path="quantily" type="number" class="form-control" value=""/>
                                     </div>
+
                                     <div class="col-md-12">
                                         <div class="actions">
                                             <input type="submit" value="BOOKING NOW!" name="submit"
@@ -330,7 +332,18 @@
 </style>
 
 
+<<<<<<< HEAD
 <script src="js/jquery.min.js"></script>
+=======
+
+<script src="js/jquery.min.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+    function validate() {
+        alert('Bạn đã đăng ký thành công.');
+    }
+</SCRIPT>
+
+>>>>>>> c3fb459f15ff8d46a40c8552caad5bb4390c3cd3
 <script>
     $(document).ready(function(){
 
