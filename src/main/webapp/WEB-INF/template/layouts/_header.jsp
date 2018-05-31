@@ -4,7 +4,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
->>>>>>> aac04c3a99b33201b2d97ac99f99253b317a0f64
 <!-- START PRELOADER -->
 <div class="preloader">
     <div class="status">
@@ -23,12 +22,12 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#service">tour đặt biệt</a></li>
-                <li class="nav-item"><a class="nav-link" href="#special_package">tour hàng đầu</a></li>
-                <li class="nav-item"><a class="nav-link" href="#top_deals">dịch vụ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#deals_discount">Khác</a></li>   
-                <c:if test="${pageContext.request.userPrincipal.name != null}">
+                <li class="nav-item"><a class="nav-link" href="/home">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#top_deals">Tour đứng đầu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#special_package">Tất cả các tour</a></li>
+                <li class="nav-item"><a class="nav-link" href="#service">Dịch Vụ</a></li>
+                
+                 <c:if test="${pageContext.request.userPrincipal.name != null}">
                     <form id="logoutForm" method="POST" action="${contextPath}/logout">
                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                     </form>

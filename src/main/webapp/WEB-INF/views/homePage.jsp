@@ -138,7 +138,7 @@
 						<img src="img/bg/anhdep3.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết</a></p>
+							<p><a href="tour-booking?id=${listValue.id}">xem chi tiết</a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -149,7 +149,7 @@
 						<img src="img/bg/anhdep6.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết</a></p>
+							<p><a href="tour-booking?id=${listValue.id}">xem chi tiết</a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -160,7 +160,7 @@
 						<img src="img/bg/bana2.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết </a></p>
+							<p><a href="tour-booking?id=${listValue.id}">xem chi tiết </a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -171,7 +171,7 @@
 						<img src="img/bg/63.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết </a></p>
+							<p><a href="tour-booking?id=${listValue.id}">xem chi tiết </a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -182,7 +182,7 @@
 						<img src="img/bg/bro6.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết </a></p>
+							<p><a href="tour-booking?id=${listValue.id}">xem chi tiết </a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -193,7 +193,7 @@
 						<img src="img/bg/62.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết</a></p>
+							<p><a href="tour-booking?id=${listValue.id}">xem chi tiết</a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -208,7 +208,6 @@
 
 <!-- START SERVICES -->
 <section id="service" class="our_services">
-<<<<<<< HEAD
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -268,7 +267,6 @@
 <!-- END SERVICES -->
 
 <!-- START WHY CHOOSE US -->
-<<<<<<< HEAD
 <section data-stellar-background-ratio="0.3" class="why_choose section-padding"  style="background-image: url(img/bg/sunwhell.jpg);  background-size:cover; background-position: center center;">
 	<div class="container">
 		<div class="row">
