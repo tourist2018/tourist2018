@@ -75,8 +75,8 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                 <ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="/login-tourist">Login</a></li>
-					<li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+					<li class="nav-item"><a class="nav-link" href="/login-tourist">Đăng Nhập</a></li>
+					<li class="nav-item"><a class="nav-link" href="/register">Đăng Kí</a></li>
                     <li class="nav-item"><a class="nav-link" href="/home">SVTH: Lương Thị Thảo</a></li>
                 </ul>
             </div>

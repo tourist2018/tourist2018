@@ -32,7 +32,7 @@
                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                     </form>
 
-                    <li class="nav-item"><a class="nav-link" onclick="document.forms['logoutForm'].submit()">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="document.forms['logoutForm'].submit()">Đăng xuất</a></li>
 
                 </c:if>
             </ul>

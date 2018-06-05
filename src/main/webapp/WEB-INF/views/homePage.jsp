@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                     <select class="custom-select" name="costTour">
-                                        <option value="0" selected>Choose...</option>
+                                        <option value="0" selected>Giá...</option>
                                         <option value="100">< $200</option>
                                         <option value="500">< $500</option>
                                         <option value="1000">< $1000</option>
@@ -337,14 +337,15 @@
         </div><!-- END ROW -->
     </div><!-- END CONTAINER -->
 </section>
+
 <!-- END COUNTER -->
 
-
+<!-- 
 <!-- START COMPANY PARTNER LOGO -->
-<div data-stellar-background-ratio="0.3" class="partner-logo"
+<!-- <div data-stellar-background-ratio="0.3" class="partner-logo"
      style="background-image: url(img/bg/pro.jpg);  background-size:cover; background-position: center center;">
-    <div class="container">
-        <div class="row">
+    <div class="ctnbottom">
+        <div class="rowpaner">
             <div class="col-md-12" data-aos="fade-up">
                 <div class="partner">
                     <a href="#"><img src="img/partner/1.jpg" alt="image"></a>
@@ -360,9 +361,10 @@
                     <a href="#"><img src="img/partner/5.jpg" alt="image"></a>
                     <a href="#"><img src="img/partner/6.jpg" alt="image"></a>
                 </div>
-            </div><!-- END COL  -->
+            </div>END COL  --> -->
         </div><!--END  ROW  -->
     </div><!-- END CONTAINER  -->
 </div>
 <!-- END COMPANY PARTNER LOGO -->
+
 

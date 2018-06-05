@@ -48,9 +48,7 @@
                                            modelAttribute="form_booking" onSubmit="return validate()">
                                     <form:input path="tour" type="hidden" value="${oneTour.id}"/>
                                     <form:input path="user" type="hidden" value="${user_id}"/>
-                                    <div class="form-group col-md-12">
-                                        <h4>Tên Tour:</h4>
-                                    </div>
+                                 
                                     <div class="form-group col-md-12">
                                         <h5>${oneTour.title}.</h5>
                                     </div>

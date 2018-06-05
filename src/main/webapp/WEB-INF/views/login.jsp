@@ -1,5 +1,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <div class="font-back-in-form-login">
     <div class="container login-test-form">
         <div class="logmod__form" style="margin-top: 150px;">
@@ -21,8 +23,8 @@
                     </div>
                 </div>
                 <div class="simform__actions">
-                    <button class="btn btn-danger login-test" style="width:47%;" name="login" value="submitLogin" type="sumbit">Log In</button>
-                    <button class="btn btn-default login-test" style="width:47%;" type="button"><a href="/register">Register</a></button>
+                    <button class="btn btn-danger login-test" style="width:47%;" name="login" value="submitLogin" type="sumbit">Đăng Nhập</button>
+                    <button class="btn btn-default login-test" style="width:47%;" type="button"><a href="/register">Đăng Kí</a></button>
                 </div>
             </form:form>
         </div>
