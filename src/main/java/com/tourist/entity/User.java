@@ -1,7 +1,10 @@
 package com.tourist.entity;
 
 
+import org.hibernate.annotations.Cascade;
+
 import java.io.Serializable;
+import java.util.List;
 import java.util.UUID;
 
 import javax.persistence.*;
@@ -25,6 +28,17 @@ public class User implements Serializable {
     @Column(name = "role")
     @Enumerated(EnumType.STRING)
     private EnumRole role;
+
+    @OneToMany(mappedBy = "user")
+    private List<OrderTour> ordertours;
+
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "id", nullable = false)
+    private Profile profile;
+
+    @OneToMany(mappedBy="user")
+    private List<CommentEntity> commentEntity;
+
 
     public User() {
         super();
@@ -99,5 +113,29 @@ public class User implements Serializable {
         result = 31 * result + password.hashCode();
         result = 31 * result + role.hashCode();
         return result;
+    }
+
+    public List<OrderTour> getOrdertours() {
+        return ordertours;
+    }
+
+    public void setOrdertours(List<OrderTour> ordertours) {
+        this.ordertours = ordertours;
+    }
+
+    public Profile getProfile() {
+        return profile;
+    }
+
+    public void setProfile(Profile profile) {
+        this.profile = profile;
+    }
+
+    public List<CommentEntity> getCommentEntity() {
+        return commentEntity;
+    }
+
+    public void setCommentEntity(List<CommentEntity> commentEntity) {
+        this.commentEntity = commentEntity;
     }
 }

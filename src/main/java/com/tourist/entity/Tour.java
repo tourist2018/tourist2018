@@ -1,11 +1,9 @@
 package com.tourist.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -30,9 +28,11 @@ public class Tour implements Serializable {
     private String image;
 
     @Column(name = "date_start")
+    @Temporal(TemporalType.DATE)
     private Date dateStart;
 
     @Column(name = "date_end")
+    @Temporal(TemporalType.DATE)
     private Date dateEnd;
 
     @Column(name = "cost")
@@ -41,15 +41,24 @@ public class Tour implements Serializable {
     @Column(name = "tour_time")
     private String tourTimes;
 
-    public Tour() {
+    @Column(name = "quantity")
+    private int quantity;
 
+    @OneToMany(mappedBy = "tour")
+    private List<OrderTour> ordertours;
+
+    @OneToMany(mappedBy = "tour")
+    private List<CommentEntity> commentEntity;
+
+    public Tour() {
+        super();
     }
 
     public Tour(String id) {
         this.setId(id);
     }
 
-    public Tour(String id, String title, String content, String address, String image, Date date_start, Date date_end, String tour_time, int cost) {
+    public Tour(String id, String title, String content, String address, String image, Date date_start, Date date_end, String tour_time, int cost, int quantity) {
         this.setId(id);
         this.setTitle(title);
         this.setAddress(address);
@@ -59,12 +68,17 @@ public class Tour implements Serializable {
         this.setDateEnd(date_end);
         this.setTourTimes(tour_time);
         this.setCostTour(cost);
+        this.setQuantity(quantity);
     }
 
 
-    public String getAddress() { return address; }
+    public String getAddress() {
+        return address;
+    }
 
-    public void setAddress(String address) { this.address = address; }
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public String getId() {
         return id;
@@ -98,7 +112,9 @@ public class Tour implements Serializable {
         this.image = image;
     }
 
-    public Date getDateStart() {return dateStart;}
+    public Date getDateStart() {
+        return dateStart;
+    }
 
     public void setDateStart(Date dateStart) {
         this.dateStart = dateStart;
@@ -129,4 +145,28 @@ public class Tour implements Serializable {
     }
 
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+
+    public List<OrderTour> getOrdertours() {
+        return ordertours;
+    }
+
+    public void setOrdertours(List<OrderTour> ordertours) {
+        this.ordertours = ordertours;
+    }
+
+    public List<CommentEntity> getCommentEntity() {
+        return commentEntity;
+    }
+
+    public void setCommentEntity(List<CommentEntity> commentEntity) {
+        this.commentEntity = commentEntity;
+    }
 }

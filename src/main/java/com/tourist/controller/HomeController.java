@@ -18,15 +18,19 @@ public class HomeController {
     @RequestMapping(value= {"/home"})
     public ModelAndView home(Model model) {
         ModelAndView modelAndView = new ModelAndView("homePage");
+
         List<Tour> listTour = tourService.getAllTour();
         modelAndView.addObject("lists",listTour);
+        /*Tour form_search = new Tour();
+        form_search.setId("test");
+        model.addAttribute("form_search",new Tour());*/
         return modelAndView;
     }
     @RequestMapping(value= {"/"})
     public String homePage(Model model) {
         return "redirect:/home";
     }
-     
+
     @RequestMapping("/review")
     public String next(Model model) {
         model.addAttribute("address", "VietNam");

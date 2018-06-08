@@ -63,11 +63,11 @@
 	<![endif]-->
 </head>
 
-<body>
+<body style="background-image: url(img/bg/avata.jpg);  background-size:cover; background-position: center center;">
 
 
     <!-- START NAVBAR -->
-    <nav class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded site-navigation" style="background-color: #1e7e34">
+    <nav class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded site-navigation" style="background-color: #000">
         <div class="container">
             <a class="navbar-brand" href="home"><img src="img/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,14 +76,14 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                 <ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link" href="/login-tourist">Login</a></li>
-					<li class="nav-item"><a class="nav-link" href="/login-and-register">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/home">SVTH: Thảo</a></li>
+					<li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home">SVTH: Lương Thị Thảo</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div style="margin-top: 100px; text-align: center;">
-        <h3>Chào mừng đến với <a href="/home">TOP</a></h3>
+    <div style="margin-top: 200px; text-align: center;">
+        <h2><strong style="color: white;">Chào mừng đến với <a href="/home">TOP</a></strong></h2>
     </div>
 
 </body>

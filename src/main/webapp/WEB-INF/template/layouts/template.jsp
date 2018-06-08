@@ -55,6 +55,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/quy.css">
 	<link rel="stylesheet" href="css/review.css">
+	<link rel="stylesheet" href="css/tour-booking.css">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -63,7 +64,7 @@
       <![endif]-->
 </head>
 
-<body data-spy="scroll" data-offset="80">
+<body >
 
 	<tiles:insertAttribute name="header" />
 
@@ -118,6 +119,38 @@
 		src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 
 	<script src="js/list_tour.js"></script>
+
+
+	<script type="text/javascript">
+        $("i#color-like").click(function () {
+            var id_user = $("input.id_user").val();
+            var id_tour = $("input.id_tour").val();
+//            var id_tour = user_id;
+            console.log(id_user);
+            console.log(id_tour);
+			$.ajax({
+			 type: "POST",
+			 url: '/like' + '/' + id_tour,
+			 data: {
+			 headers: {
+			 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			 },
+			 "id_user": id_user,
+			 '_method': 'POST',
+			 _token: '{{csrf_token()}}',
+			 },
+			 success: function (msg) {
+			 alert("like " + msg.status);
+			 /*var fade = "employee-id-" + msg.id;
+			 $('ul.contextMenu[data-employee-id="' + msg.id + '"').hide()
+			 var fadeElement = $('#' + fade);
+			 console.log(fade);
+			 fadeElement.fadeOut("fast");*/
+			 }
+			 });
+
+        });
+	</script>
 
 </body>
 </html>

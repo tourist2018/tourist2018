@@ -1,10 +1,9 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-</head>
-<body style="margin-top: 96px; background-color: #D4CDCE;">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 isELIgnored="false" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<u:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
 	<table id="example" class="table table-striped table-bordered"
 		style="width: 100%;">
 		<thead>
@@ -14,62 +13,54 @@
 				<th><h6>Date Go</h6></th>
 				<th><h6>Date end</h6></th>
 				<th><h6>Salary</h6></th>
-				<th><h6>Note</h6></th>
+                <th><h6>Số người</h6></th>
+                <th><h6>Tổng tiền</h6></th>
+                <th></th>
 			</tr>
 		</thead>
 		<tbody>
+    <c:forEach var="listValue" items="${lists}">
 			<tr>
-				<td>Nguyễn Ngọc Thanh</td>
-				<td>tour korea</td>
-				<td>23/12/2018</td>
-				<td>09/1/2019</td>
-				<td>$620,800</td>
-				<td>thanh handsome ==]]</td>
+				<td>${listValue.user.username}</td>
+				<td>${listValue.tour.title}</td>
+				<td>${listValue.tour.dateStart}</td>
+				<td>${listValue.tour.dateEnd}</td>
+				<td>$${listValue.tour.costTour}</td>
+                <td>${listValue.quantily}</td>
+                <td>$${listValue.tour.costTour * listValue.quantily}</td>
+                <td>
+                    <div class="list-tour-choose" style="display: inline-flex;">
+                        <c:choose>
+                            <c:when test="${listValue.statusBooking == 'CANCEL' }">
+                                <input style="width: 100px;" readonly="readonly" class="btn btn-default"  id="result" value="Đã hủy">
+                            </c:when>
+                            <c:otherwise>
+                                <c:choose>
+                                    <c:when test="${listValue.statusBooking == 'DONE' }">
+                                        <input style="width: 100px;" readonly="readonly" class="btn btn-default"  id="result" value="Đã đặt">
+                                    </c:when>
+                                    <c:otherwise>
+                                        <input style="width: 120px;" class="btn btn-default"  id="result" value="Đang đợi">
+                                    </c:otherwise>
+                                </c:choose>
+                            </c:otherwise>
+                        </c:choose>
+                        <form:form action="${contextPath}/delete-booking" method="get" modelAttribute="delete_booking" >
+                            <form:input path="id" type="hidden" value="${listValue.id}"/>
+                            <c:choose>
+                            <c:when test="${listValue.statusBooking == 'DONE' }">
+                            </c:when>
+                                <c:otherwise>
+                                    <input type="submit" name="submit" class="btn btn-danger" value="Hủy"/>
+                                </c:otherwise>
+                            </c:choose>
+                        </form:form>
+                    </div>
+                </td>
 			</tr>
-			<tr>
-				<td>Hoang Ba Ngoc Quy</td>
-				<td>tour china</td>
-				<td>12/11/2018</td>
-				<td>23/11/2018</td>
-				<td>$120,800</td>
-				<td>3m/2 :))</td>
-			</tr>
-
-			<tr>
-				<td>Vo Quang Tuan</td>
-				<td>tour Quang Nam</td>
-				<td>12/11/2018</td>
-				<td>13/11/2018</td>
-				<td>$12</td>
-				<td>best alcohol =))</td>
-			</tr>
-			<tr>
-				<td>Luong Thi Thu Thao</td>
-				<td>tour Hue</td>
-				<td>12/11/2018</td>
-				<td>14/11/2018</td>
-				<td>$22,000</td>
-				<td>Thao Crazy</td>
-			</tr>
-			<tr>
-				<td>Huynh Thi kim oanh</td>
-				<td>tour Tp HCM</td>
-				<td>12/11/2018</td>
-				<td>17/11/2018</td>
-				<td>$223,100</td>
-				<td>miss you !!</td>
-			</tr>
-			<tr>
-				<td>Vo Thi Bich Tu</td>
-				<td>tour Canh Duong</td>
-				<td>12/11/2018</td>
-				<td>14/11/2018</td>
-				<td>$404,200</td>
-				<td>Thi Store !!</td>
-			</tr>
-
+    </c:forEach>
 		</tbody>
-		<tfoot>
+		<%--<tfoot>
 			<tr style="color: #f9461d">
 				<th><h6>Performer</h6></th>
 				<th><h6>Name Tour</h6></th>
@@ -78,7 +69,5 @@
 				<th><h6>Salary</h6></th>
 				<th><h6>Note</h6></th>
 			</tr>
-		</tfoot>
+		</tfoot>--%>
 	</table>
-</body>
-</html>
