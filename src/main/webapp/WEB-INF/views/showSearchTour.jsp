@@ -14,6 +14,7 @@
         <th><h6>Date Go</h6></th>
         <th><h6>Date end</h6></th>
         <th><h6>Salary</h6></th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
@@ -29,6 +30,11 @@
                 <p><fmt:formatDate value="${listValue.dateEnd}" pattern="yyyy/MM/dd" /></p>
             </td>
             <td>$${listValue.costTour}</td>
+            <td>
+                <button class="btn  btn-default">
+                    <a href="${contextPath}/tour-booking?id=${listValue.id}">Xem chi tiết</a>
+                </button>
+            </td>
         </tr>
     </c:forEach>
     </tbody>

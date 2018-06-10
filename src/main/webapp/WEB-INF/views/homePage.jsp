@@ -208,7 +208,6 @@
 
 <!-- START SERVICES -->
 <section id="service" class="our_services">
-<<<<<<< HEAD
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -268,7 +267,6 @@
 <!-- END SERVICES -->
 
 <!-- START WHY CHOOSE US -->
-<<<<<<< HEAD
 <section data-stellar-background-ratio="0.3" class="why_choose section-padding"  style="background-image: url(img/bg/sunwhell.jpg);  background-size:cover; background-position: center center;">
 	<div class="container">
 		<div class="row">
@@ -341,30 +339,4 @@
 </section>
 <!-- END COUNTER -->
 
-
-<!-- START COMPANY PARTNER LOGO -->
-<div data-stellar-background-ratio="0.3" class="partner-logo"
-     style="background-image: url(img/bg/pro.jpg);  background-size:cover; background-position: center center;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" data-aos="fade-up">
-                <div class="partner">
-                    <a href="#"><img src="img/partner/1.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/2.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/3.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/4.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/5.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/6.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/1.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/2.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/3.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/4.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/5.jpg" alt="image"></a>
-                    <a href="#"><img src="img/partner/6.jpg" alt="image"></a>
-                </div>
-            </div><!-- END COL  -->
-        </div><!--END  ROW  -->
-    </div><!-- END CONTAINER  -->
-</div>
-<!-- END COMPANY PARTNER LOGO -->
 

@@ -29,7 +29,7 @@ public class User implements Serializable {
     @Enumerated(EnumType.STRING)
     private EnumRole role;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user",fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<OrderTour> ordertours;
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

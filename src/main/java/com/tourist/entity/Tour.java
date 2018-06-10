@@ -44,10 +44,10 @@ public class Tour implements Serializable {
     @Column(name = "quantity")
     private int quantity;
 
-    @OneToMany(mappedBy = "tour")
+    @OneToMany(mappedBy = "tour", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<OrderTour> ordertours;
 
-    @OneToMany(mappedBy = "tour")
+    @OneToMany(mappedBy = "tour", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<CommentEntity> commentEntity;
 
     public Tour() {

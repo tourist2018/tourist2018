@@ -24,9 +24,9 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#service">tour đặt biệt</a></li>
-                <li class="nav-item"><a class="nav-link" href="#special_package">tour hàng đầu</a></li>
-                <li class="nav-item"><a class="nav-link" href="#top_deals">dịch vụ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#special_package">các tour</a></li>
+                <li class="nav-item"><a class="nav-link" href="#top_deals">tour hàng đầu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#service">dịch vụ</a></li>
                 <li class="nav-item"><a class="nav-link" href="#deals_discount">Khác</a></li>   
                 <c:if test="${pageContext.request.userPrincipal.name != null}">
                     <form id="logoutForm" method="POST" action="${contextPath}/logout">

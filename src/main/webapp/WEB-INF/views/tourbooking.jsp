@@ -322,7 +322,7 @@
         font-size:  20px;
         position:  absolute;
         left:  30px;
-        top: 30px;
+        top: 25px;
     }
     .post-description {
         float: right;
@@ -332,9 +332,6 @@
 </style>
 
 
-<<<<<<< HEAD
-<script src="js/jquery.min.js"></script>
-=======
 
 <script src="js/jquery.min.js"></script>
 <SCRIPT LANGUAGE="JavaScript">
@@ -342,8 +339,6 @@
         alert('Bạn đã đăng ký thành công.');
     }
 </SCRIPT>
-
->>>>>>> c3fb459f15ff8d46a40c8552caad5bb4390c3cd3
 <script>
     $(document).ready(function(){
 

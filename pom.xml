@@ -149,11 +149,7 @@
 		</dependency>
 		<!-- hibernate -->
 
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>5.2.12.Final</version>
-			</dependency>
+
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -168,12 +164,6 @@
 			<version>5.2.4.Final</version>
 		</dependency>
 
-
-		<dependency>
-			<groupId>org.hibernate.javax.persistence</groupId>
-			<artifactId>hibernate-jpa-2.1-api</artifactId>
-			<version>1.0.0.Final</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.apache.tiles</groupId>

@@ -12,8 +12,7 @@
                style="width: 82%;; margin-left:18%; margin-top: -1px;">
             <thead>
             <tr style="color: #f9461d">
-=
-                <th><h4>Người đặt tour</h6></th>
+                <th><h4>Người đặt tour</h4></th>
                 <th><h4>Tên tour</h4></th>
                 <th><h4>Ngày đi</h4></th>
                 <th><h4>Ngày về</h4></th>
@@ -30,9 +29,9 @@
                         <td>${listValue.user.username}</td>
                         <td>${listValue.tour.title}</td>
                         <td>${listValue.tour.dateStart}</td>
-                       <td>${listValue.tour.dateEnd}</td>
+                        <td>${listValue.tour.dateEnd}</td>
                         <td>$${listValue.tour.costTour}</td>
-                        <td>$${listValue.quantily}</td>
+                        <td>${listValue.quantily}</td>
                         <td>${listValue.statusBooking}</td>
                         <td>
                             <form:form accept-charset="utf-8" modelAttribute="doneOrderForm" action="${contextPath}/admin/done-order"
@@ -50,16 +49,6 @@
                 </c:forEach>
             </c:if>
             </tbody>
-            <%--<tfoot>
-                <tr style="color: #f9461d">
-                    <th><h6>Performer</h6></th>
-                    <th><h6>Name Tour</h6></th>
-                    <th><h6>Date Go</h6></th>
-                    <th><h6>Date end</h6></th>
-                    <th><h6>Salary</h6></th>
-                    <th><h6>Note</h6></th>
-                </tr>
-            </tfoot>--%>
         </table>
     </div>
 </section>
