@@ -66,11 +66,7 @@
                                                 <p>Giá tiền: <strong>$${oneTour.costTour}</strong></p>
                                             </div>
                                             <div class="col-6">
-<<<<<<< HEAD
-                                                <p>Số lượng: <strong>30</strong></p>
-=======
                                                 <p>Số lượng: <strong>${numberTour}</strong></p>
->>>>>>> a5d013595ca1404c0e878d5a00e86372ad674b2c
                                             </div>
                                         </div>
                                     </div>
