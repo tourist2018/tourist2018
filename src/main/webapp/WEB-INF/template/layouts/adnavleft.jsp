@@ -1,4 +1,23 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<style>
+	.col-md-3.left_col {
+		width:  220px;
+	}
+    .fuckingwowshit {
+        width: 100%;
+    }
+
+    .navbar.nav_title {
+        width: 100%;
+    }
+    table#example {
+        width:  82%;
+        margin-left:  19%;
+        margin-top:  19px;
+    }
+</style>
+
 <body class="nav-md">
 	<div class="container body">
 		<div class="main_container">

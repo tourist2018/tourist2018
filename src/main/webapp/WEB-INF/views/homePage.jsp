@@ -138,7 +138,7 @@
 						<img src="img/bg/anhdep3.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết</a></p>
+							<p><a href="tour-booking?id=1">xem chi tiết</a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -149,7 +149,7 @@
 						<img src="img/bg/anhdep6.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết</a></p>
+							<p><a href="tour-booking?id=2">xem chi tiết</a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -160,7 +160,7 @@
 						<img src="img/bg/bana2.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết </a></p>
+							<p><a href="tour-booking?id=3">xem chi tiết </a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -171,7 +171,7 @@
 						<img src="img/bg/63.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết </a></p>
+							<p><a href="tour-booking?id=4">xem chi tiết </a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -182,7 +182,7 @@
 						<img src="img/bg/bro6.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết </a></p>
+							<p><a href="tour-booking?id=5">xem chi tiết </a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->
@@ -193,7 +193,7 @@
 						<img src="img/bg/62.jpg" alt=""/>
 						<figcaption>
 							<h4>Địa điểm đẹp</h4>
-							<p><a href="info.php">xem chi tiết</a></p>
+							<p><a href="tour-booking?id=6">xem chi tiết</a></p>
 						</figcaption>
 					</figure>
 				</div><!--- END GRID -->

@@ -8,8 +8,7 @@
     <div class="container">
     </div>
     <div class="container">
-        <table id="example" class="table table-striped table-bordered"
-               style="width: 82%;; margin-left:18%; margin-top: -1px;">
+        <table id="example" class="table table-striped table-bordered">
             <thead>
             <tr style="color: #f9461d">
                 <th><h4>Người đặt tour</h4></th>

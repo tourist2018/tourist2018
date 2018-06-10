@@ -26,7 +26,7 @@
     }
 </style>
 <section class="tour_details section-padding">
-    <div class="container" style="width: 82%;height : 700px; margin-left:18% ; background: azure;">
+    <div class="container" style="width: 82%;height : 700px; margin-left:19% ; background: azure;">
         <form  style="margin-left:15% ; margin-top:10%;" accept-charset="utf-8" action="${contextPath}/admin/create-tour" method="POST" >
             <div class="form-group w100">
                 <label class="w40">Địa điểm:</label>
