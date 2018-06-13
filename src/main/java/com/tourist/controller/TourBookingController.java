@@ -12,10 +12,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import java.util.Date;
+import java.util.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.List;
 
 @Controller
 public class TourBookingController {
@@ -47,7 +46,25 @@ public class TourBookingController {
         int numberTour = tourService.getQuantityTour(EnumStatusBooking.DONE,tourHasChoose);
 
         List<CommentEntity> comments = commentService.getAllCommentByIdPost(id);
+        List<String> quantily = new ArrayList<String>();
 
+        quantily.add("1");
+        quantily.add("2");
+        quantily.add("3");
+        quantily.add("4");
+        quantily.add("5");
+        quantily.add("6");
+        quantily.add("7");
+        quantily.add("8");
+        quantily.add("9");
+        quantily.add("10");
+        quantily.add("11");
+        quantily.add("12");
+        quantily.add("13");
+        quantily.add("14");
+        quantily.add("15");
+
+        modelAndView.addObject("quantily", quantily);
         modelAndView.addObject("oneTour", tourHasChoose);
         modelAndView.addObject("numberTour", numberTour);
         model.addAttribute("form_booking", new OrderTour());

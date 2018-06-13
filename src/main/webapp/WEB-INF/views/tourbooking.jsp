@@ -75,7 +75,8 @@
                                         <p>Số người đăng ký:
                                         </p>
                                         <span hidden="hidden" id="valueNumber" value="${numberTour}"></span>
-                                        <form:input path="quantily" type="number" class="form-control" value=""/>
+                                        <%--<form:input path="quantily" type="number" class="form-control" value=""/>--%>
+                                        <form:select path="quantily" items="${quantily}" />
                                     </div>
 
                                     <div class="col-md-12">
@@ -334,6 +335,13 @@
     }
     button#tour-was-booking {
         margin-left: 5%;
+    }
+    select#quantily {
+        position:  relative;
+        top: -25px;
+        left:  45%;
+        width:  55px;
+        border-radius:  5px;
     }
 </style>
 
