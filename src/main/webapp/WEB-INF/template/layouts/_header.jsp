@@ -23,7 +23,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/home">Trang Chủ</a></li>
                 <li class="nav-item"><a class="nav-link" href="#special_package">các tour</a></li>
                 <li class="nav-item"><a class="nav-link" href="#top_deals">tour hàng đầu</a></li>
                 <li class="nav-item"><a class="nav-link" href="#service">dịch vụ</a></li>
@@ -33,7 +33,7 @@
                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                     </form>
 
-                    <li class="nav-item"><a class="nav-link" onclick="document.forms['logoutForm'].submit()">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="document.forms['logoutForm'].submit()">Đăng Xuất</a></li>
 
                 </c:if>
             </ul>

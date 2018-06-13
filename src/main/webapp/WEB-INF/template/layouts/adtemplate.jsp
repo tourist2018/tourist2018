@@ -40,6 +40,27 @@
 <!-- Custom Theme Style -->
 <link href="../gentelella/build/css/custom.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style>
+		.nav_menu {
+			float: right;
+			background: #EDEDED;
+			border-bottom: 1px solid #D9DEE4;
+			margin-bottom: -19px;
+			width: 101%;
+		}
+
+		footer {
+			margin-left: 16.4%;
+			padding-top: 56px;
+		}
+		.table {
+			width: 100%;
+			max-width: 100%;
+			margin-left: 221px;
+			margin-bottom: 0px;
+			background-color: blanchedalmond;
+		}
+	</style>
 </head>
 
 

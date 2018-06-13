@@ -84,12 +84,15 @@
                                                    STYLE="width: 200px;"
                                                    id="submitButton" class="btn btn-lg btn-contact-bg"
                                                    title="Submit Your Message!"/>
-                                            <button class="btn btn-default" id="tour-was-booking" style="width: 200px; height: 40px;">
+                                            <%--<button class="btn btn-default" id="tour-was-booking" style="width: 200px; height: 40px;">
                                                 <a href="${contextPath}/list-tour">TOUR ĐÃ
-                                                ĐẶT</a></button>
+                                                ĐẶT</a></button>--%>
                                         </div>
                                     </div>
                                 </form:form>
+                                <button class="btn btn-default" id="tour-was-booking" style="width: 200px; height: 40px;">
+                                <a href="${contextPath}/list-tour">TOUR ĐÃ
+                                    ĐẶT</a></button>
                             </div>
                         </div>
                         <div class="tag">
@@ -328,6 +331,9 @@
         float: right;
         width: 70%;
         border-left: solid 0.25px;
+    }
+    button#tour-was-booking {
+        margin-left: 5%;
     }
 </style>
 

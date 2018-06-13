@@ -28,4 +28,6 @@ public interface TourService {
     List<Tour> searchTourByAddressAndCost(   String address,  int cost);
 
     List<Tour> searchTourByDateAndCost(  Date date, int cost);
+
+    List<Tour> getTourByCustomValue();
 }

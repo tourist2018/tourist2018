@@ -41,4 +41,13 @@
             </tbody>
         </table>
     </div>
+
 </section>
+<style>
+
+    table#example {
+        width:  83.6%;
+        margin-left: 221px;
+        margin-top: 19px;
+    }
+</style>

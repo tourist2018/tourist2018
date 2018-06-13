@@ -41,4 +41,9 @@ public interface TourRepository extends JpaRepository<Tour, String> {
 
     Tour findByDateStart(Date date);
 
+//    @Query("select t.id from Tour as t")  (select count(*) from OrderTour as o where o.tour.id = t.id) as quantity
+    @Query("SELECT DISTINCT t FROM Tour as t join OrderTour as o on t.id = o.tour group by t.id order by count(o.tour) DESC")
+    List<Tour> findTourByCustomValue();
+
+
 }

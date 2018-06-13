@@ -2,6 +2,7 @@ package com.tourist.admin;
 
 import com.tourist.entity.EnumStatusBooking;
 import com.tourist.entity.OrderTour;
+import com.tourist.entity.Tour;
 import com.tourist.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

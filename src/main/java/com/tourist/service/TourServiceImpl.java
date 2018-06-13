@@ -115,4 +115,9 @@ public class TourServiceImpl implements TourService {
     public List<Tour> searchTourByDateAndCost(Date date, int cost) {
         return tourRepository.searchTourByDateAndCost(date, cost);
     }
+
+    @Override
+    public List<Tour> getTourByCustomValue() {
+        return tourRepository.findTourByCustomValue();
+    }
 }

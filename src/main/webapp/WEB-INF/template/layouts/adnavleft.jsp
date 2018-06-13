@@ -52,14 +52,17 @@
 							<div class="menu_section" style="with: 18%;">
 								<h3>Dashboard</h3>
 								<ul class="nav side-menu">
-									<li><a href="${contextPath}/admin/all-tour"><i
-											class="fas fa-list-ol"></i> Danh sách Tour</a></li>
 									<li><a href="${contextPath}/admin/all-order"><i
-											class="fas fa-align-justify"></i> Danh sách Oder</a></li>
+											class="fas fa-align-justify"></i> Danh sách  Tour Oder</a></li>
 									<li><a href="${contextPath}/admin/all-user"><i
 											class="far fa-address-card"></i> Danh sách User</a></li>
+									<li><a href="${contextPath}/admin/all-tour"><i
+											class="fas fa-list-ol"></i> Danh sách Tour</a></li>
 									<li><a href="${contextPath}/admin/new-tour"><i
-											class="far fa-newspaper"></i> Tạo Tour</a></li>
+											class="far fa-newspaper"></i> Tạo Tour Mới</a></li>
+									<li><a href="${contextPath}/admin/thongke-tour"><i
+											class="far fa-newspaper"></i> Thống Kê Tour</a></li>
+								</ul>
 							</div>
 
 

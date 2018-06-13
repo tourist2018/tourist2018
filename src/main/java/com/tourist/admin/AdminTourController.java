@@ -1,5 +1,6 @@
 package com.tourist.admin;
 
+import com.tourist.entity.OrderTour;
 import com.tourist.entity.Tour;
 import com.tourist.entity.User;
 import com.tourist.service.TourService;
@@ -12,8 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * Created by Ngoc Quy on 5/12/2018.
@@ -71,5 +71,37 @@ public class AdminTourController {
             System.out.println(e.toString());
         }
         return "redirect:/admin/index";
+    }
+
+
+
+    @RequestMapping(value = "/admin/thongke-tour")
+    public ModelAndView adminThongKeTour(@Valid OrderTour cancelOrderForm){
+        ModelAndView modelAndView = new ModelAndView("thongke");
+        List<Tour> tourThongKe = tourService.getTourByCustomValue();
+        List<Tour> tourThongKe1 = tourService.getAllTour();
+        System.out.println(tourThongKe);
+        /*for (int i = 0; i < tourThongKe.size(); i++){
+            System.out.println(tourThongKe.get(i).getId());
+            System.out.println(tourThongKe.get(i).getAddress());
+            System.out.println(tourThongKe.get(i).getDateStart());
+            Object obj = tourThongKe.get(i).getAddress();
+            for (int j=0; j<=4; j++){
+                System.out.println(obj);
+            }
+        }*/
+        /*ArrayList<Object> result = (ArrayList) tourThongKe.listIterator();
+        Iterator itr = result.iterator();
+        while(itr.hasNext()){
+            Object[] obj = (Object[]) itr.next();
+
+            String client = String.valueOf(obj[0]);
+            Integer service = Integer.parseInt(String.valueOf(obj[1]));
+
+            System.out.println(client);
+            System.out.println(service);
+        }*/
+        modelAndView.addObject("lists",tourThongKe);
+        return modelAndView;
     }
 }

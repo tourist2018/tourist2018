@@ -98,6 +98,9 @@
     <definition name="admin-new-tour" extends="base.admin">
         <put-attribute name="body" value="/WEB-INF/admin_1/new_tour.jsp" />
     </definition>
+    <definition name="thongke" extends="base.admin">
+        <put-attribute name="body" value="/WEB-INF/admin_1/thongke.jsp" />
+    </definition>
 
 
 </tiles-definitions> 
